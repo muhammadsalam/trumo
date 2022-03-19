@@ -46,14 +46,6 @@
                     background-color: $white
                 .furniture-item__tooltip
                     display: inline-block
-            &.active
-                .furniture-item__svg
-                    transform: rotateZ(-45deg) scale(.75) !important
-                    fill: $red !important
-                    background-color: $white !important
-                    cursor: pointer
-                .furniture-item__tooltip
-                    display: none
             &__tooltip
                 background-color: $white
                 width: 216px
@@ -181,6 +173,14 @@
             flex-direction: column
             align-items: center
             overflow: hidden
+            &.active
+                .furniture-item__svg
+                    transform: rotateZ(-45deg) scale(.75) !important
+                    fill: $red !important
+                    background-color: $white !important
+                    cursor: pointer
+                .furniture-item__tooltip
+                    display: none
             &-relative
                 width: 720px
                 flex-shrink: 0

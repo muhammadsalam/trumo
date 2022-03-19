@@ -108,16 +108,6 @@ body {
 .main .furniture-item:hover .furniture-item__tooltip {
   display: inline-block;
 }
-.main .furniture-item.active .furniture-item__svg {
-  -webkit-transform: rotateZ(-45deg) scale(0.75) !important;
-          transform: rotateZ(-45deg) scale(0.75) !important;
-  fill: #E83445 !important;
-  background-color: #ffffff !important;
-  cursor: pointer;
-}
-.main .furniture-item.active .furniture-item__tooltip {
-  display: none;
-}
 .main .furniture-item__tooltip {
   background-color: #ffffff;
   width: 216px;
@@ -302,6 +292,16 @@ body {
         -ms-flex-align: center;
             align-items: center;
     overflow: hidden;
+  }
+  .main .furniture.active .furniture-item__svg {
+    -webkit-transform: rotateZ(-45deg) scale(0.75) !important;
+            transform: rotateZ(-45deg) scale(0.75) !important;
+    fill: #E83445 !important;
+    background-color: #ffffff !important;
+    cursor: pointer;
+  }
+  .main .furniture.active .furniture-item__tooltip {
+    display: none;
   }
   .main .furniture-relative {
     width: 720px;
