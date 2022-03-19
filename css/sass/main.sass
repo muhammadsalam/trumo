@@ -1,0 +1,238 @@
+@import style
+
+.main
+    padding-top: 113px
+    header
+        text-align: center
+    .furniture
+        margin-top: 48px
+        &-border
+            border: 2px solid $lightgray-2
+            border-radius: 20px
+            overflow: hidden
+            width: 100%
+            display: flex
+            justify-content: center
+        &-relative
+            position: relative
+        &-background
+            display: flex
+            justify-content: center
+            overflow: hidden
+            border-radius: 20px
+            img
+                width: 1211px
+                object-position: center
+        &-item
+            display: inline-block
+            position: absolute
+            border-radius: 50%
+            &__svg
+                width: 32px
+                height: 32px
+                display: flex
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                background-color: $red
+                fill: $white
+                border: 1px solid $red
+                transition: width .123s ease-out, height .123s ease-out, transform .123s ease-out, fill .123s ease-out, background-color .123s ease-out
+            &:hover
+                border-radius: 0
+                .furniture-item__svg
+                    transform: rotateZ(-45deg) scale(.75)
+                    fill: $red
+                    background-color: $white
+                .furniture-item__tooltip
+                    display: inline-block
+            &.active
+                .furniture-item__svg
+                    transform: rotateZ(-45deg) scale(.75) !important
+                    fill: $red !important
+                    background-color: $white !important
+                    cursor: pointer
+                .furniture-item__tooltip
+                    display: none
+            &__tooltip
+                background-color: $white
+                width: 216px
+                padding: 16px 24px 6px 20px
+                display: none
+                border-radius: 0 5px 5px 5px
+                border: 1px solid $red
+                margin-left: 30px
+                position: relative
+                z-index: 2
+        &-tooltip__link
+            font-weight: 600
+            font-size: 20px
+            margin-bottom: 6px
+            text-decoration: none
+            display: inline-block
+            color: $black
+            position: relative
+            text-decoration-skip-ink: none
+            &:after
+                content: url('../../img/main/arrow.svg')
+                display: inline-block
+                position: absolute
+                right: -16px
+                top: 9px
+                line-height: 0
+                transition: right .123s ease-out
+            &:hover
+                text-decoration: underline
+                &:after
+                    right: -21px
+        &-tooltip__text
+            margin: 0 0 23px
+            font-size: 13px
+            color: $dark
+            line-height: 18px
+        &-tooltip__bottom
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-tooltip__btn
+            margin-left: -15px
+            padding: 6px 15px
+            color: $red
+            border-radius: 5px
+            transition: background-color .123s ease-out
+            text-decoration: none
+            &:hover
+                background-color: $lightgray-3
+        span
+            font-size: 13px
+            line-height: 18px
+            color: $lightgray
+    .footer
+        margin-top: 55px
+        display: flex
+        .empty
+            margin: auto
+        &-btn
+            background-color: $red
+            color: $white
+            border: 1px solid $red
+            padding: 10px 15px
+            display: inline-block
+            position: relative
+            border-radius: 7px
+            font-size: 14px
+            text-decoration: none
+            transition: padding .123s ease-out
+            outline: none
+            span
+                border-radius: 5px
+                border: 1px solid transparent
+                display: inline-block
+                transition: padding .123s ease-out, border-color .123s ease-out
+                svg
+                    margin-left: 5px
+                    display: none
+            &:hover, &:focus
+                padding: 3px
+                transform: translate(-3px, -3px)
+                span
+                    padding: 10px 10px 10px 15px
+                    border-color: $white
+                    svg
+                        display: inline-block
+        &-nav
+            margin-top: 8px
+            margin-left: auto
+            flex-grow: 1
+            max-width: 212px
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            &__link
+                text-decoration: none
+                font-size: 14px
+                color: $black
+                transition: color .123s ease-out
+                outline: none
+                &:hover, &:focus
+                    color: $red
+    .mobile-tooltips
+        display: none
+        &-item
+            padding: 14px 20px 20px
+            border: 1px solid $red
+            border-radius: 10px
+            margin-top: 14px
+            display: none
+            &.active
+                display: block
+
+@media (max-width: 1100px)
+    .main
+        padding-top: 90px
+        .furniture-background img
+            width: 100%
+
+@media (max-width: 700px)
+    .main
+        padding-top: 60px
+        .furniture
+            display: flex
+            flex-direction: column
+            align-items: center
+            overflow: hidden
+            &-relative
+                width: 720px
+                flex-shrink: 0
+            &-item__svg
+                pointer-events: none
+            &-item:hover
+                .furniture-item__svg
+                    transform: rotateZ(0)
+                    fill: $white
+                    background-color: $red
+                .furniture-item__tooltip
+                    display: none !important
+            &-tooltip__link
+                margin-bottom: 4px
+                &:after
+                    right: -29px
+                &:hover:after
+                    right: -35px
+            &-tooltip__text
+                margin-bottom: 17px
+        .mobile-tooltips
+            display: block
+        
+        .footer
+            margin-top: 20px
+            justify-content: space-between
+            .empty
+                display: none
+            &-nav
+                margin-left: 10px
+
+@media (max-width: 600px)
+    .main
+        padding-top: 20px
+        .furniture-relative
+            width: 600px
+
+@media (max-width: 420px)
+    .main .footer
+        flex-direction: column
+        align-items: center
+        &-btn
+            padding: 14px 60px
+            &:hover, &:focus
+                padding: 3px
+                transform: translate(-3px, -3px)
+                span
+                    padding: 14px 60px 14px 60px
+                    border-color: $white
+                    svg
+                        display: inline-block
+        &-nav
+            width: 100%
+            margin: 20px 0 0 0
+            

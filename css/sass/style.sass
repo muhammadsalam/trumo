@@ -1,0 +1,33 @@
+$white: #ffffff
+$lightgray: #C4C4C4
+$lightgray-2: #D4D4D4
+$lightgray-3: #F5F5F5
+$red: #E83445
+$black: #000000
+$dark: #525252
+
+
+*
+    box-sizing: border-box
+    font-family: 'Nunito Sans', sans-serif
+    
+body
+    margin: 0
+    padding: 0
+
+.container
+    margin: 0 auto
+    max-width: 1180px
+    padding: 0 12px
+
+.logo
+    display: inline-block
+    padding-bottom: 9px
+    border-bottom: 2px solid transparent
+    transition: border-bottom-color 123ms ease-out
+    line-height: 0
+    outline: none
+    &:hover, &:focus
+        border-bottom-color: $lightgray !important
+    &.active, &:active
+        border-bottom-color: $red
