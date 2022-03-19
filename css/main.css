@@ -43,7 +43,6 @@ body {
 .main .furniture-border {
   border: 2px solid #D4D4D4;
   border-radius: 20px;
-  overflow: hidden;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,8 +53,10 @@ body {
 }
 .main .furniture-relative {
   position: relative;
+  width: 100%;
 }
 .main .furniture-background {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,6 +65,8 @@ body {
           justify-content: center;
   overflow: hidden;
   border-radius: 20px;
+  border-radius: 20px;
+  width: 100%;
 }
 .main .furniture-background img {
   width: 1211px;
@@ -303,10 +306,16 @@ body {
   .main .furniture.active .furniture-item__tooltip {
     display: none;
   }
+  .main .furniture-border {
+    overflow: hidden;
+  }
   .main .furniture-relative {
-    width: 720px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    width: 720px;
+  }
+  .main .furniture-background img {
+    width: 100%;
   }
   .main .furniture-item__svg {
     pointer-events: none;
@@ -353,10 +362,18 @@ body {
     padding-top: 20px;
   }
   .main .furniture-relative {
-    width: 600px;
+    width: 720px;
+    overflow: hidden;
+  }
+  .main .furniture-background img {
+    width: 100%;
   }
 }
 @media (max-width: 420px) {
+  .main .furniture-relative {
+    width: 600px;
+  }
+
   .main .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
