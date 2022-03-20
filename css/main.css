@@ -305,11 +305,17 @@ body {
   font-size: 14px;
   color: #000000;
   -webkit-transition: color 0.123s ease-out;
-  transition: color 0.123s ease-out;
+  -webkit-transition: all 0.123s ease-out;
+  transition: all 0.123s ease-out;
   outline: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#E83445), to(#E83445));
+  background-image: linear-gradient(90deg, #E83445 0%, #E83445 100%);
+  background-position: left bottom;
+  background-size: 0px 1px;
+  background-repeat: no-repeat;
 }
 .main .footer-nav__link:hover, .main .footer-nav__link:focus {
-  color: #E83445;
+  background-size: 100% 1px;
 }
 .main .mobile-tooltips {
   display: none;

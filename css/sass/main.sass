@@ -12,7 +12,7 @@
     100%
         display: block
         transform: translateY(0px)
-        opacity: 1        
+        opacity: 1
 
 .main
     padding-top: 113px
@@ -170,11 +170,16 @@
             &__link
                 text-decoration: none
                 font-size: 14px
-                color: $black
-                transition: color .123s ease-out
+                color: #000000
+                -webkit-transition: color 0.123s ease-out
+                transition: all 0.123s ease-out
                 outline: none
+                background-image: linear-gradient(90deg, #E83445 0%, #E83445 100%)
+                background-position: left bottom
+                background-size: 0px 1px
+                background-repeat: no-repeat
                 &:hover, &:focus
-                    color: $red
+                    background-size: 100% 1px
     .mobile-tooltips
         display: none
         &-item
@@ -234,7 +239,7 @@
                 margin-bottom: 17px
         .mobile-tooltips
             display: block
-        
+
         .footer
             margin-top: 20px
             justify-content: space-between
@@ -271,4 +276,3 @@
         &-nav
             width: 100%
             margin: 20px 0 0 0
-            
