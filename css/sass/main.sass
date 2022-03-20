@@ -1,5 +1,19 @@
 @import style
 
+@keyframes display
+    0%
+        opacity: 0
+        display: none
+        transform: translateY(20px)
+    25%
+        display: none
+    50%
+        display: block
+    100%
+        display: block
+        transform: translateY(0px)
+        opacity: 1        
+
 .main
     padding-top: 113px
     padding-bottom: 50px
@@ -49,12 +63,18 @@
                     fill: $red
                     background-color: $white
                 .furniture-item__tooltip
-                    display: inline-block
+                    display: block
+                    animation: display .5s ease-out forwards
+            &.active .furniture-item__svg
+                transform: rotateZ(-45deg) scale(.75) !important
+                fill: $red !important
+                background-color: $white !important
             &__tooltip
+                animation: display .5s ease-out alternate-reverse forwards
+                display: none
                 background-color: $white
                 width: 216px
                 padding: 16px 24px 6px 20px
-                display: none
                 border-radius: 0 5px 5px 5px
                 border: 1px solid $red
                 margin-left: 30px
