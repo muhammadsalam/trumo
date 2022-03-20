@@ -33,6 +33,7 @@ body {
 
 .main {
   padding-top: 113px;
+  padding-bottom: 50px;
 }
 .main header {
   text-align: center;
@@ -196,26 +197,29 @@ body {
   background-color: #E83445;
   color: #ffffff;
   border: 1px solid #E83445;
-  padding: 10px 15px;
+  padding: 0px 0px;
   display: inline-block;
   position: relative;
   border-radius: 7px;
   font-size: 14px;
   text-decoration: none;
-  -webkit-transition: padding 0.123s ease-out;
-  transition: padding 0.123s ease-out;
+  -webkit-transition: padding 0.2s ease-out;
+  transition: padding 0.2s ease-out;
   outline: none;
 }
 .main .footer-btn span {
+  padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid transparent;
   display: inline-block;
-  -webkit-transition: padding 0.123s ease-out, border-color 0.123s ease-out;
-  transition: padding 0.123s ease-out, border-color 0.123s ease-out;
+  -webkit-transition: padding 0.2s ease-out, border-color 0.2s ease-out;
+  transition: padding 0.2s ease-out, border-color 0.2s ease-out;
 }
 .main .footer-btn span svg {
-  margin-left: 5px;
-  display: none;
+  margin-left: -9px;
+  visibility: hidden;
+  -webkit-transition: 0.2s ease-out, visibility 0.123s ease-in;
+  transition: 0.2s ease-out, visibility 0.123s ease-in;
 }
 .main .footer-btn:hover, .main .footer-btn:focus {
   padding: 3px;
@@ -223,11 +227,11 @@ body {
           transform: translate(-3px, -3px);
 }
 .main .footer-btn:hover span, .main .footer-btn:focus span {
-  padding: 10px 10px 10px 15px;
   border-color: #ffffff;
 }
 .main .footer-btn:hover span svg, .main .footer-btn:focus span svg {
-  display: inline-block;
+  margin-left: 5px;
+  visibility: visible;
 }
 .main .footer-nav {
   margin-top: 8px;

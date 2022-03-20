@@ -2,6 +2,7 @@
 
 .main
     padding-top: 113px
+    padding-bottom: 50px
     header
         text-align: center
     .furniture
@@ -111,30 +112,33 @@
             background-color: $red
             color: $white
             border: 1px solid $red
-            padding: 10px 15px
+            padding: 0px 0px
             display: inline-block
             position: relative
             border-radius: 7px
             font-size: 14px
             text-decoration: none
-            transition: padding .123s ease-out
+            transition: padding .2s ease-out
             outline: none
             span
+                padding: 10px 15px
                 border-radius: 5px
                 border: 1px solid transparent
                 display: inline-block
-                transition: padding .123s ease-out, border-color .123s ease-out
+                transition: padding .2s ease-out, border-color .2s ease-out
                 svg
-                    margin-left: 5px
-                    display: none
+                    margin-left: -9px
+                    visibility: hidden
+                    transition: .2s ease-out, visibility .123s ease-in
             &:hover, &:focus
                 padding: 3px
                 transform: translate(-3px, -3px)
                 span
-                    padding: 10px 10px 10px 15px
                     border-color: $white
                     svg
-                        display: inline-block
+                        margin-left: 5px
+
+                        visibility: visible
         &-nav
             margin-top: 8px
             margin-left: auto
