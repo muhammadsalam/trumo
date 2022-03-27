@@ -1,21 +1,7 @@
 @import style
 
-@keyframes display
-    0%
-        opacity: 0
-        display: none
-        transform: translateY(20px)
-    25%
-        display: none
-    50%
-        display: block
-    100%
-        display: block
-        transform: translateY(0px)
-        opacity: 1
-
 .main
-    padding-top: 113px
+    padding-top: var(--pt)
     padding-bottom: 50px
     header
         text-align: center
@@ -84,23 +70,9 @@
             font-weight: 600
             font-size: 20px
             margin-bottom: 6px
-            text-decoration: none
-            display: inline-block
-            color: $black
-            position: relative
-            text-decoration-skip-ink: none
-            &:after
-                content: url('../../img/main/arrow.svg')
-                display: inline-block
-                position: absolute
-                right: -16px
-                top: 9px
-                line-height: 0
-                transition: right .123s ease-out
+            @include h_underline(-16px, url('../../img/icons/arrow.svg'))
             &:hover
-                text-decoration: underline
-                &:after
-                    right: -21px
+                @include hh_underline(-16px)
         &-tooltip__text
             margin: 0 0 23px
             font-size: 13px
@@ -168,18 +140,9 @@
             justify-content: space-between
             align-items: flex-start
             &__link
-                text-decoration: none
                 font-size: 14px
-                color: #000000
-                -webkit-transition: color 0.123s ease-out
-                transition: all 0.123s ease-out
-                outline: none
-                background-image: linear-gradient(90deg, #E83445 0%, #E83445 100%)
-                background-position: left bottom
-                background-size: 0px 1px
-                background-repeat: no-repeat
-                &:hover, &:focus
-                    background-size: 100% 1px
+                @include _link
+                @include h_redborder(0)
     .mobile-tooltips
         display: none
         &-item
@@ -193,13 +156,13 @@
 
 @media (max-width: 1100px)
     .main
-        padding-top: 90px
+        padding-top: var(--pt)
         .furniture-background img
             width: 100%
 
 @media (max-width: 700px)
     .main
-        padding-top: 60px
+        padding-top: var(--pt)
         .furniture
             display: flex
             flex-direction: column
@@ -250,7 +213,7 @@
 
 @media (max-width: 600px)
     .main
-        padding-top: 20px
+        padding-top: var(--pt)
         .furniture-relative
             width: 720px
             overflow: hidden

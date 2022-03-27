@@ -1,0 +1,370 @@
+@import style
+
+.categories
+    padding-top: var(--pt)
+
+.header
+    display: flex
+    &-inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 370px
+        flex-grow: 1
+        margin-left: 99px
+    &-catalog
+        position: relative
+        &__btn
+            display: flex
+            align-items: center
+            background-color: $red
+            border: 0
+            padding: 11px 15px
+            border-radius: 5px
+            font-size: 14px
+            color: $white
+            margin-right: 10px
+            cursor: pointer
+            transition: background-color .3s ease-out
+            &:hover
+                background-color: $_darkred
+            &:focus
+                outline: none
+                background-color: $darkred
+                & + .header-catalog__list
+                    display: block
+                    animation: display .5s ease-out forwards
+                div span
+                    position: absolute
+            div
+                width: 14px
+                height: 14px
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                align-items: center
+                position: relative
+                margin-right: 8px
+                span
+                    display: inline-block
+                    border: 1px solid $white
+                    border-radius: 1px
+                    width: 4px
+                    height: 4px
+        &__list
+            list-style: none
+            padding: 0
+            margin: 0
+            width: 190px
+            padding: 16px 28px 28px 15px
+            position: absolute
+            top: calc(100% + 9px)
+            background-color: $white
+            box-shadow: 0px 0px 20px rgba(232, 52, 69, 0.1)
+            border-radius: 5px
+            display: none
+            animation: display .5s ease-out alternate-reverse forwards
+            li a
+                display: inline-flex
+                font-size: 14px
+                align-items: center
+                @include h_redborder(5px)
+                @include _link
+                svg
+                    margin-right: 7px
+                    path
+                        stroke: $lightgray-4
+                &:hover path
+                    stroke: $red
+            li + li
+                margin-top: 11px
+
+    &-nav
+        max-width: 212px
+        flex-grow: 1
+        display: flex
+        justify-content: space-between
+        &__link
+            font-size: 14px
+            @include _link
+            @include h_redborder(11px)
+            margin-bottom: -11px
+    &-right
+        display: flex
+        flex-grow: 1
+        justify-content: flex-end
+        align-items: center
+        margin-left: auto
+    &-form
+        display: flex
+        flex-grow: 1
+        justify-content: flex-end
+        max-width: 250px
+        align-items: center
+        border-radius: 5px
+        background-color: $white
+        margin-right: 28px
+        transition: padding .3s ease-out, background-color .3s ease-out
+        &.active
+            background: $lightgray-3
+            padding: 13px 10px 13px
+            button
+                margin-right: 15px
+                svg path
+                    fill: $red
+            input
+                width: 100%
+        button
+            line-height: 0
+            transition: margin .3s ease-out
+            @include _btn
+            @include fillColor($black, $red)
+            label
+                cursor: pointer
+        input
+            padding: 0
+            width: 0px
+            font-size: 14px
+            font-family: 'Nunito', sans-serif
+            font-weight: 300
+            border: 0
+            background: 0
+            outline: none
+            transition: width .3s ease-out
+            &:placeholder
+                color: #D0C5C5
+    &-favorites
+        margin-right: 28px
+        line-height: 0
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 34px
+        height: 34px
+        border: 1px solid transparent
+        transition: border-color .3s ease-out
+        border-radius: 50%
+        @include newNotification
+        .data-new
+            top: 1px
+            right: -4px
+        &:hover
+            border-color: $red
+        svg
+            fill: none
+            stroke: $black
+    &-basket
+        font-size: 14px
+        margin-bottom: -8px
+        @include _link
+        @include newNotification
+        @include h_redborder(8px)
+        svg
+            display: none
+
+    &-btn
+        height: 20px
+        width: 30px
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+        @include _btn
+        display: flex
+        flex-direction: column
+        align-self: center
+        outline: none
+        display: none
+        &.active
+            span
+                transform: translateX(100%)
+                opacity: 0
+                visibility: hidden
+                margin-bottom: 0
+            &:before
+                margin-bottom: 0
+                transform: rotate(45deg) translateY(3px)
+            &:after
+                transform: rotate(-45deg) translateY(-3px)
+        span, &:after, &:before
+            transform-origin: center
+            transition: transform .3s ease-out, opacity .3s ease-out, visibility .3s ease-out, margin .2s ease-out
+            content: ''
+            margin-bottom: 6px
+            background: $black
+            display: inline-block
+            width: 30px
+            height: 2px
+        &:after
+            margin-bottom: 0
+    
+.main
+    margin-top: 80px
+    &-title
+        margin-bottom: 52px
+    &-list
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: 27px 22px
+        &__item
+            height: 313px
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            &:hover .h-transform
+                background: #FAFAFA
+                width: calc(100% + 18px)
+                height: calc(100% + 18px)
+            &:hover a
+                @include hh_underline(-28px, $red)
+                text-decoration: none
+                background-size: 100% 1px
+
+            .h-transform
+                border-radius: 10px
+                transition: width .3s ease-out, height .3s ease-out, background .3s ease-out, padding .3s ease-out
+                background: $lightgray-3
+                padding: 30px 24px 20px
+                width: 100%
+                height: 100%
+                position: absolute
+            a
+                width: min-content
+                max-width: 200px
+                font-size: 28px
+                margin-bottom: 1px
+                line-height: 30px
+                outline: none
+                background-image: linear-gradient(90deg, #E83445 0%, #E83445 100%)
+                background-position: left bottom
+                background-size: 0px 1px
+                background-repeat: no-repeat
+                @include h_underline(-28px, url('../../img/icons/arrow2.svg'))
+                transition: background .3s ease-out
+            span
+                display: block
+                font-weight: 300
+                font-size: 14px
+                color: $lightgray-4
+                position: relative
+            .img
+                width: 100%
+                height: 100%
+                left: 0
+                top: 0
+                position: absolute
+                z-index: 0
+                overflow: hidden
+                img
+                    position: absolute
+                    z-index: 0
+            .tooltip
+                position: absolute
+                z-index: 5
+                left: 25px
+                bottom: 20px
+                &:hover
+                    svg
+                        fill: $red
+                    .tooltip-item
+                        display: block
+                svg
+                    transition: fill .12s ease-in
+                    filL: #EAEAEA
+                &-item
+                    position: absolute
+                    top: 50%
+                    right: -8px
+                    transform: translate(100%, -50%)
+                    width: 197px
+                    font-family: 'Roboto', sans-serif
+                    color: $white
+                    background-color: rgba(0,0,0,.8)
+                    border-radius: 5px
+                    padding: 15px 20px
+                    backdrop-filter: blur(10px)
+                    display: none
+                    &:before
+                        line-height: 0
+                        content: url('../../img/icons/tooltip-arr.svg')
+                        display: inline-block
+                        position: absolute
+                        left: .4px
+                        top: 50%
+                        transform: translate(-100%, -50%)
+                    b
+                        font-weight: 700
+                        font-size: 16px
+                    p
+                        margin: 5px 0 0 0
+                        font-size: 10px
+
+    .free
+        margin-top: 191px
+
+@media (max-width: 900px)
+    .header-inner
+        margin-left: 20px
+    .header-form
+        margin-right: 15px
+    
+@media (max-width: 768px)
+    .header-inner
+        display: none
+        margin-left: 0
+        position: fixed
+        align-items: flex-start
+        justify-content: flex-start
+        flex-direction: column
+        padding-top: calc(var(--pt) + 60px)
+        top: 0
+        left: 0
+        background-color: $white
+        width: 100vw
+        height: 100vh
+        max-width: 100%
+        line-height: 54px
+    .active .header-inner
+        display: flex
+    .header-catalog
+        display: inline-block
+        width: 100%
+        &__btn
+            border-top: 1px solid #E8E8E8
+            border-bottom: 1px solid #E8E8E8
+            line-height: 54px
+            background: transparent !important
+            color: $black
+            margin: 0
+            padding: 0
+            width: 100%
+            div
+                display: none
+        &__list li
+            border-bottom: 1px solid #E8E8E8
+    .header-nav
+        flex-direction: column
+        flex-grow: 0
+        width: 100%
+        max-width: 100%
+        &__link
+            padding: 0
+            width: 100%
+            border-bottom: 1px solid #E8E8E8
+    .header-right
+        margin-right: 50px
+    .header-form
+        // position: fixed
+        top: 0
+        left: 0
+    .header-favorites
+        margin-top: -7px
+    .header-basket
+        &__title
+            display: none
+        svg
+            display: inline-block
+            line-height: 0
+    .header-btn
+        display: flex
