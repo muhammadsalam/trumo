@@ -1,0 +1,524 @@
+@import style
+
+.catalog
+    padding-top: var(--pt)
+
+.main
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 70px
+    &-title
+        font-size: 35px
+        line-height: 48px
+    &-filter
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 30px
+        flex-grow: 1
+        max-width: 818px
+        font-size: 14px
+        font-family: 'Nunito Sans'
+        &__title
+            font-size: 22px
+            font-weight: 400
+            display: none
+            margin: 0 0 27px
+        &__btn
+            font-size: 14px
+            line-height: 19px
+            align-items: center
+            display: none
+            @include _btn
+            span
+                margin-right: 11px
+                position: relative
+                span
+                    position: absolute
+                    top: -10px
+                    left: 7px
+                    padding: 1px 5px
+                    background-color: $red
+                    color: #fff
+                    font-weight: 700
+                    font-size: 11px
+                    line-height: 15px
+                    border-radius: 50%
+        &__item
+            cursor: pointer
+            position: relative
+            transition-duration: .5s
+            .btn
+                position: relative
+                display: inline-block
+                @include _btn
+                padding: 7px 13px 7px 0
+                @include h_redborder(7px)
+                &.active
+                    background-size: 100% 1px
+                    svg
+                        fill: $red
+                        transform: rotate(-180deg)
+            svg
+                width: 8px
+                fill: #ccc
+                position: absolute
+                right: 0
+                top: 50%
+                transform: translateY(-50%)
+                transition-duration: .3s
+            .boost
+                background-color: $red
+                padding: 2.5px 24px 2.5px 6px
+                font-weight: 700
+                font-size: 11px
+                line-height: 13px
+                color: #fff
+                border-radius: 120px
+                position: relative
+                margin-left: 5px
+                .cross
+                    width: 7px
+                    height: 7px
+                    position: absolute
+                    right: 8.5px
+                    padding: 2.5px 0
+                    top: 50%
+                    transform: translateY(-50%)
+                    span
+                        position: absolute
+                        width: 9.5px
+                        height: 1px
+                        background-color: #fff
+                        border-radius: 5px
+                        transform: rotate(45deg)
+                        &:last-child
+                            transform: rotate(-45deg)
+            .filter-modal
+                position: absolute
+                z-index: 10
+                display: none
+                left: 0
+                top: 100%
+                padding: 20px 22px 23px 15px
+                font-size: 14px
+                line-height: 19px
+                background: #FFFFFF
+                box-shadow: 0px 0px 20px rgba(232, 52, 69, 0.1)
+                border-radius: 5px
+                cursor: default
+                &.materials-modal
+                    padding-right: 15px
+                &.active
+                    display: block
+                &__item
+                    display: flex
+                    min-width: 182px
+                    font-size: 14px
+                    &:hover .filter-square,
+                    &:hover .filter-circle
+                        border-color: $red
+                        background-color: $white
+                    & + .filter-modal__item
+                        margin-top: 18px
+                    input
+                        display: none
+                        &:checked + .filter-square:after,
+                        &:checked + .filter-circle:after
+                            opacity: 1
+                        &:checked + .filter-circle
+                            border-color: $red
+                    .filter-square
+                        width: 16px
+                        height: 16px
+                        background-color: #F3F3F3
+                        margin-right: 9px
+                        border: 1px solid transparent
+                        transition: border-color .2s ease-out, background-color .2s ease-out
+                        position: relative
+                        border-radius: 2px
+                        &:after
+                            content: url('../../img/icons/filter-square.svg')
+                            transition: opacity .2s ease-out
+                            opacity: 0
+                            position: absolute
+                            top: -1px
+                            left: -1px
+                            line-height: 0
+                    .filter-circle
+                        width: 16px
+                        height: 16px
+                        background-color: #F3F3F3
+                        border: 1px solid #F3F3F3
+                        display: flex
+                        margin-right: 9px
+                        transition: border-color .2s ease-out, background-color .2s ease-out
+                        border-radius: 50%
+                        &:after
+                            content: ''
+                            opacity: 0
+                            display: inline-block
+                            background-color: $red
+                            width: 6px
+                            height: 6px
+                            margin: auto
+                            transition: opacity .2s ease-in
+                .count
+                    display: flex
+                    justify-content: space-between
+                &__range
+                    width: 160px
+                    display: flex
+                    margin-top: 10px
+                    position: relative
+                    height: 4px
+                    background: #F0F0F0
+                    border: 0
+                    .noUi-connect
+                        background: $red
+                        height: 4px
+                    .noUi-handle
+                        box-shadow: none
+                        width: 16px
+                        height: 16px
+                        right: -8px
+                        background-color: $white
+                        border: 1px solid $red
+                        border-radius: 50%
+                        transition: background-color .3s ease-out
+                        &:hover, &:active, &.noUi-active
+                            background-color: $red
+                        &:before, &:after
+                            display: none
+                &__search
+                    width: 238px
+                    padding: 12px 14px 9px
+                    background: $white
+                    border: none
+                    box-shadow: inset 0px 0px 5px rgba(232, 52, 69, 0.1)
+                    border-radius: 5px
+                    font-style: italic
+                    font-size: 14px
+                    color: $black
+                    outline: none
+                    border: 1px solid transparent
+                    transition: border-color .2s ease-out
+                    border-color: $red
+                    &:placeholder-shown
+                        border-color: transparent
+                    &:focus, &:hover
+                        border-color: $red
+                    &::placeholder
+                        color: $lightgray
+                &__materials
+                    margin-top: 21px
+                    max-height: 180px
+                    scrollbar-width: auto
+                    scrollbar-color: $red #f0f0f0
+                    overflow-y: auto
+                    padding: 6px 10px 6px 0
+                    &::-webkit-scrollbar
+                        width: 7px
+                    &::-webkit-scrollbar-track
+                        background: #f0f0f0
+                        border-radius: 5px 5px 0 0
+                    &::-webkit-scrollbar-thumb
+                        background-color: #e83445
+                        border-radius: 5px
+                        border: 0px none $white
+        &__closeBtn
+            @include _btn
+            position: absolute
+            top: 30px
+            display: none
+            justify-content: center
+            align-items: center
+            right: var(--cp)
+            width: 30px
+            height: 30px
+            &:after, &:before
+                transform-origin: center
+                position: absolute
+                display: inline-block
+                content: ''
+                width: 30px
+                height: 2px
+                background-color: $black
+            &:after
+                transform: rotate(45deg)
+            &:before
+                transform: rotate(-45deg)
+    &-sort
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 120px 0 36px
+        .found
+            color: #8C8C8C
+            span
+                color: #000
+        .sort
+            color: #8C8C8C
+            font-size: 14px
+            line-height: 19px
+            position: relative
+            padding-right: 24px
+            display: inline-block
+        span
+            &:nth-child(2)
+                color: #000
+        .sort-vec
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 12px
+            height: 10px
+            span
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 2px
+                background-color: $red
+                &:last-child
+                    top: 8px
+                    background-color: $lightgray
+                    width: 6px
+                &:first-child
+                    top: 4px
+                    background-color: $lightgray
+                    width: 9px
+    .free
+        margin-top: 191px
+    &-catalog
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 38px
+        font-family: 'Nunito Sans'
+        &__item
+            text-decoration: none
+            color: inherit
+            display: flex
+            flex-direction: column
+            position: relative
+            &:hover
+                img
+                    border-radius: 0
+                .buy-btn button
+                    top: 0%
+            img
+                transition: border-radius .15s ease-out
+                border-radius: 10px
+                width: 100%
+            .like
+                width: 36px
+                height: 36px
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 0
+                outline: none
+                cursor: pointer
+                background: rgba(255, 255, 255, 0.8)
+                backdrop-filter: blur(5px)
+                border-radius: 5px
+                position: absolute
+                top: 14px
+                right: 14px
+                svg
+                    fill: #fff
+                    stroke: $red
+                    transition: fill .15s ease-in
+                    pointer-events: none
+                &:hover svg
+                    fill: $red
+                &.isFavourite
+                    background-color: rgba(232, 52, 69, .8)
+                    transition: background-color .2s ease-out
+                    &:before
+                        pointer-events: none
+                        content: ''
+                        display: block
+                        border: 0.5px solid $red
+                        opacity: 0
+                        background-color: $white
+                        width: 0px
+                        height: 1px
+                        position: absolute
+                        top: 9px
+                        left: 12px
+                        transform-origin: left
+                        transform: rotate(54deg)
+                        transition: width .15s ease-out, opacity .15s ease-in
+                    &:hover
+                        background-color: $red
+                        svg
+                            stroke: $red
+                            fill: $white
+                        &:before
+                            opacity: 1
+                            width: 17px
+                    svg
+                        stroke: rgba(232, 52, 69, .8)
+            .description
+                max-width: 266px
+                flex: 1 1 auto
+            .price
+                color: $lightgray-4
+            .buy-btn
+                margin-top: 9px
+                transition: height .3s ease-out
+                overflow: hidden
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 38px
+                position: relative
+                overflow: hidden
+                button
+                    top: -100%
+                    position: relative
+                    @include _btn
+                    &.for-basket
+                        padding: 10px 22px
+                        background-color: $red
+                        color: #fff
+                        border-radius: 5px
+                        transition: top .1s ease-out 0s, background-color .123s ease-out
+                        &:hover
+                            background-color: #F53245
+                    &.order
+                        color: $lightgray-4
+                        transition: color .123s ease-in, top .1s ease-out 0s,
+                        &:hover
+                            color: $red
+        
+    .load-btn
+        margin-top: 22px
+
+@media (max-width: 1550px)
+    .main-filter__item .filter-modal
+        left: auto
+        right: 0
+
+@media (max-width: 1024px)
+    .main-filter__item .filter-modal.price
+        left: 0
+        right: auto
+    .main-catalog
+        grid-template-columns: 1fr 1fr 1fr
+        &__item .buy-btn
+            display: none
+
+@media (max-width: 847px)
+    .main-top
+        margin-top: 30px
+        align-items: stretch
+        flex-direction: column
+    .main-sort
+        margin-top: 30px
+    .main-filter
+        max-width: 100%
+        margin-left: 0
+        margin-top: 10px
+
+@media (max-width: 768px)
+    .main-top
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+    .main-filter
+        display: none
+        flex-direction: column
+        align-items: stretch
+        justify-content: flex-start
+        position: fixed
+        overflow: auto
+        top: 0
+        left: 0
+        padding: 80px 0 0
+        width: 100vw
+        height: 100vh
+        z-index: 10
+        margin-top: 0
+        background-color: $white
+        &__title
+            display: block
+            font-size: 24px
+            padding: 0 var(--cp)
+        &.active
+            display: flex
+            .main-filter__closeBtn
+                display: flex
+        &__btn
+            display: flex
+        &__item
+            border-bottom: 1px solid #E8E8E8
+            width: 100%
+            &:first-of-type
+                border-top: 1px solid #E8E8E8
+            .btn
+                display: flex
+                width: 100%
+                font-size: 22px
+                font-weight: 700
+                padding: 12px var(--cp) 16px
+                background-size: 0 !Important
+                &.active svg
+                    transform: scale(2) rotate(-180deg)
+                svg
+                    transform: scale(2)
+                    right: var(--cp)
+            .filter-modal
+                position: static
+
+    .free
+        position: static
+    .free-top
+        margin-bottom: 10px
+        &__link
+            display: none
+    .free hr
+        display: none
+
+    .main-sort
+        margin: 37px 0 26px
+        .found
+            font-size: 14px
+            line-height: 19px
+    .main-title
+        font-weight: 700
+        font-size: 22px
+        line-height: 30px
+    .main-catalog
+        grid-template-columns: repeat(2, 1fr)
+        &__item
+            height: auto
+    .main-sort
+        .sort
+            display: flex
+        .sort > span:first-child
+            display: none
+        .sort > span:nth-child(2)
+            order: 2
+        .sort-vec
+            order: 1
+
+@media (max-width: 600px)
+    .main-top
+        margin-top: 72px
+
+@media (max-width: 425px)
+    .main-catalog
+        grid-template-columns: repeat(1, 1fr)
+        &__item
+            &:not(:nth-child(even))
+                display: none
+    .load-btn button
+        width: 100%
+        svg
+            transform: translate(-65px, -50%)
+            left: 50%
