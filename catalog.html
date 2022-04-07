@@ -184,45 +184,52 @@
                                 </svg>
                             </button>
                             <div class="filter-modal price">
-                                <div class="filter-modal__checked"></div>
+                                <div class="filter-modal__checked">
+                                    <div class="filter-modal__boost">
+                                        от 20 000 ₽ до 40 000 ₽
+                                        <button type="button"></button>
+                                    </div>
+                                </div>
                                 <div class="filter-modal__inner">
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="1" onchange="addCheckedElementInList(this)" data-checked-id="1"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="0"/>
                                         <div class="filter-square"></div><span>до 20 000 ₽</span>
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="2" data-checked-id="2"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="1"/>
                                         <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="3" data-checked-id="3"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="2"/>
                                         <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="4" data-checked-id="4"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="3"/>
                                         <div class="filter-square"></div><span>от 40 000 ₽ до 70</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="5" data-checked-id="5"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="4"/>
                                         <div class="filter-square"></div><span>от 70 000 ₽ до 90</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="6" data-checked-id="6"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="5"/>
                                         <div class="filter-square"></div><span>от 90 000 ₽</span>
                                     </label>
                                 </div>
                             </div>
                         </div>
                         <div class="main-filter__item">
-                            <button class="btn">
+                            <button class="btn" type="button">
                                 <span>Размеры</span>
                                 <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                                 </svg>
                             </button>
-                            <div class="filter-modal"></div>
+                            <div class="filter-modal">
+                                <div class="filter-modal__inner"></div>
+                            </div>
                         </div>
                         <div class="main-filter__item">
-                            <button class="btn">
+                            <button class="btn" type="button">
                                 <span>Год произведения</span>
                                 <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -230,15 +237,17 @@
                                 </svg>
                             </button>
                             <div class="filter-modal productionyear">
-                                <div class="count">
-                                    <number>1930</number>
-                                    <number>2022</numb>
+                                <div class="filter-modal__inner">
+                                    <div class="count">
+                                        <number>1930</number>
+                                        <number>2022</numb>
+                                    </div>
+                                    <div id="productionyear" class="filter-modal__range"></div>
                                 </div>
-                                <div id="productionyear" class="filter-modal__range"></div>
                             </div>
                         </div>
                         <div class="main-filter__item">
-                            <button class="btn">
+                            <button class="btn" type="button">
                                 <span>Стиль</span>
                                 <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -252,10 +261,12 @@
                                     <span></span>
                                 </span>
                             </span>
-                            <div class="filter-modal"></div>
+                            <div class="filter-modal">
+                                <div class="filter-modal__inner"></div>
+                            </div>
                         </div>
                         <div class="main-filter__item">
-                            <button class="btn">
+                            <button class="btn" type="button">
                                 <span>Наличие</span>
                                 <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -263,35 +274,39 @@
                                 </svg>
                             </button>
                             <div class="filter-modal availability">
-                                <label class="filter-modal__item">
-                                    <input type="radio" name="availability">
-                                    <div class="filter-circle"></div>
-                                    В наличии
-                                </label>
-                                <label class="filter-modal__item">
-                                    <input type="radio" name="availability">
-                                    <div class="filter-circle"></div>
-                                    На заказ
-                                </label>
-                                <label class="filter-modal__item">
-                                    <input type="radio" name="availability">
-                                    <div class="filter-circle"></div>
-                                    Еще вариант
-                                </label>
+                                <div class="filter-modal__inner">
+                                    <label class="filter-modal__item">
+                                        <input type="radio" name="availability">
+                                        <div class="filter-circle"></div>
+                                        В наличии
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="radio" name="availability">
+                                        <div class="filter-circle"></div>
+                                        На заказ
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="radio" name="availability">
+                                        <div class="filter-circle"></div>
+                                        Еще вариант
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="main-filter__item">
-                            <button class="btn">
+                            <button class="btn" type="button">
                                 <span>Кол-во ламп</span>
                                 <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                                 </svg>
                                 </butt>
-                                <div class="filter-modal"></div>
+                                <div class="filter-modal">
+                                    <div class="filter-modal__inner"></div>
+                                </div>
                         </div>
                         <div class="main-filter__item">
-                            <button class="btn">
+                            <button class="btn" type="button">
                                 <span>Материал</span>
                                 <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -299,62 +314,64 @@
                                 </svg>
                             </button>
                             <div class="filter-modal materials-modal">
-                                <input type="text" placeholder="Найти материал" class="filter-modal__search">
-                                <div class="filter-modal__materials">
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox" data-checked-id="1">
-                                        <div class="filter-square"></div>
-                                        Дуб
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Алькантара
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Ониксовый черный
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Желто-голубоватенький
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Оникс
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Береза
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Сирень
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Береза
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Оникс
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="checkbox">
-                                        <div class="filter-square"></div>
-                                        Сирень
-                                    </label>
+                                <div class="filter-modal__inner">
+                                    <input type="text" placeholder="Найти материал" class="filter-modal__search">
+                                    <div class="filter-modal__materials">
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox" data-checked-id="1">
+                                            <div class="filter-square"></div>
+                                            Дуб
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Алькантара
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Ониксовый черный
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Желто-голубоватенький
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Оникс
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Береза
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Сирень
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Береза
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Оникс
+                                        </label>
+                                        <label class="filter-modal__item">
+                                            <input type="checkbox">
+                                            <div class="filter-square"></div>
+                                            Сирень
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <button onclick="toggleFilter()" class="main-filter__closeBtn"></button>
+                        <button type="button" onclick="toggleFilter()" class="main-filter__closeBtn"></button>
                     </form>
                     <button onclick="toggleFilter()" class="main-filter__btn">
                         <span>

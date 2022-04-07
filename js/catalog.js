@@ -52,6 +52,5 @@ filterRange.noUiSlider.on('update', function (values, handle, unencoded, isTap, 
 
 sectionToSlider('.free');
 
-// if(window.innerWidth <= 768){
-//     const 
-// }
+
+// ------ фильтры в мобилке --------

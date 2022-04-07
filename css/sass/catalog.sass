@@ -165,6 +165,41 @@
                             height: 6px
                             margin: auto
                             transition: opacity .2s ease-in
+                &__checked
+                    display: none
+                    margin-top: 18px
+                    padding: 0 22px 21px 15px
+                    border-bottom: 1px solid #E8E8E8
+                    flex-wrap: wrap
+                    gap: 15px
+                &__boost
+                    padding: 5px 15px
+                    background-color: $red
+                    border-radius: 120px
+                    color: $white
+                    align-items: center
+                    display: inline-flex
+                    button
+                        @include _btn
+                        width: 10px
+                        height: 10px
+                        position: relative
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        margin-left: 15px
+                        &:before, &:after
+                            content: ''
+                            display: block
+                            background-color: $white
+                            position: absolute
+                            width: 100%
+                            height: 2px
+                        &:before
+                            transform: rotate(-45deg)
+                        &:after
+                            transform: rotate(45deg)
+
                 .count
                     display: flex
                     justify-content: space-between
@@ -474,6 +509,12 @@
                     right: var(--cp)
             .filter-modal
                 position: static
+                box-shadow: none
+                padding: 0
+                &__inner
+                    padding: 20px 22px 23px 15px
+                &__checked
+                    display: flex
 
     .free
         position: static

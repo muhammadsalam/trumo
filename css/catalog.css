@@ -1377,6 +1377,63 @@ body.no-scroll {
   -webkit-transition: opacity 0.2s ease-in;
   transition: opacity 0.2s ease-in;
 }
+.main-filter__item .filter-modal__checked {
+  display: none;
+  margin-top: 18px;
+  padding: 0 22px 21px 15px;
+  border-bottom: 1px solid #E8E8E8;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+.main-filter__item .filter-modal__boost {
+  padding: 5px 15px;
+  background-color: #E83445;
+  border-radius: 120px;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.main-filter__item .filter-modal__boost button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15px;
+}
+.main-filter__item .filter-modal__boost button:before, .main-filter__item .filter-modal__boost button:after {
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+.main-filter__item .filter-modal__boost button:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.main-filter__item .filter-modal__boost button:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 .main-filter__item .filter-modal .count {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1867,6 +1924,17 @@ body.no-scroll {
   }
   .main-filter__item .filter-modal {
     position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+  }
+  .main-filter__item .filter-modal__inner {
+    padding: 20px 22px 23px 15px;
+  }
+  .main-filter__item .filter-modal__checked {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .free {

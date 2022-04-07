@@ -55,13 +55,3 @@ function loadmore() {
     const btn = document.querySelector(".load-btn");
     btn.classList.toggle("loading");
 }
-
-function addCheckedElementInList (el) {
-    const parent = el.parentNode;
-    const filterElement = document.createElement('div');
-    filterElement.classList.add('filter-modal__boost');
-    filterElement.innerHTML = parent.querySelector('span').innerHTML;
-    parent.parentNode.parentNode.querySelector('.filter-modal__checked').appendChild(filterElement);
-}
-
-// const 
