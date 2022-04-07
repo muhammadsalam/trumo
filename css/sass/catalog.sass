@@ -495,6 +495,8 @@
             width: 100%
             &:first-of-type
                 border-top: 1px solid #E8E8E8
+            .boost
+                display: none
             .btn
                 display: flex
                 width: 100%
@@ -510,10 +512,11 @@
             .filter-modal
                 position: static
                 box-shadow: none
-                padding: 0
+                padding: 0 var(--cp)
                 &__inner
-                    padding: 20px 22px 23px 15px
+                    padding: 20px 0 23px
                 &__checked
+                    padding: 0 0 21px 0
                     display: flex
 
     .free
@@ -551,6 +554,10 @@
 @media (max-width: 600px)
     .main-top
         margin-top: 72px
+    .main-filter__title
+        font-size: 22px
+    .main-filter__item .btn
+        font-size: 20px
 
 @media (max-width: 425px)
     .main-catalog

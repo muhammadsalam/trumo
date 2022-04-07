@@ -1903,6 +1903,9 @@ body.no-scroll {
   .main-filter__item:first-of-type {
     border-top: 1px solid #E8E8E8;
   }
+  .main-filter__item .boost {
+    display: none;
+  }
   .main-filter__item .btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1926,12 +1929,13 @@ body.no-scroll {
     position: static;
     -webkit-box-shadow: none;
             box-shadow: none;
-    padding: 0;
+    padding: 0 var(--cp);
   }
   .main-filter__item .filter-modal__inner {
-    padding: 20px 22px 23px 15px;
+    padding: 20px 0 23px;
   }
   .main-filter__item .filter-modal__checked {
+    padding: 0 0 21px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1996,6 +2000,14 @@ body.no-scroll {
 @media (max-width: 600px) {
   .main-top {
     margin-top: 72px;
+  }
+
+  .main-filter__title {
+    font-size: 22px;
+  }
+
+  .main-filter__item .btn {
+    font-size: 20px;
   }
 }
 @media (max-width: 425px) {
