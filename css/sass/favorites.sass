@@ -1,0 +1,244 @@
+@import style.sass
+
+.favorites
+    padding-top: var(--pt)
+
+.main
+    position: relative
+    &-btns
+        display: none
+        position: sticky
+        bottom: 5px
+        flex-direction: column
+        padding: 15px 0 0
+        background-color: rgba(255,255,255,.8)
+        backdrop-filter: blur(10px)
+        .all-to-basket:hover
+            padding: 0 !important
+            transform: translate(0) !important
+            span
+                padding: 8px 30px !important
+        .clear-favorites
+            margin-left: 0 !important
+            padding: 23px 0 !important
+    &-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 70px
+        margin-bottom: 83px
+        &__closeBtn
+            @include _btn
+            position: absolute
+            top: 30px
+            display: none
+            justify-content: center
+            align-items: center
+            right: var(--cp)
+            width: 30px
+            height: 30px
+            &:after, &:before
+                transform-origin: center
+                position: absolute
+                display: inline-block
+                content: ''
+                width: 30px
+                height: 2px
+                background-color: $black
+            &:after
+                transform: rotate(45deg)
+            &:before
+                transform: rotate(-45deg)
+    .all-to-basket
+        @include _btn
+        background-color: $red
+        color: $white
+        border: 1px solid $red
+        padding: 0px 0px
+        display: inline-block
+        position: relative
+        border-radius: 7px
+        font-size: 14px
+        text-decoration: none
+        transition: padding .2s ease-out
+        outline: none
+        span
+            padding: 8px 30px
+            border-radius: 5px
+            border: 1px solid transparent
+            display: inline-block
+            transition: padding .2s ease-out, border-color .2s ease-out
+            svg
+                margin-left: -9px
+                visibility: hidden
+                transition: .2s ease-out, visibility .123s ease-in
+        &:hover, &:focus
+            padding: 3px
+            transform: translate(-3px, -3px)
+            span
+                border-color: $white
+                svg
+                    margin-left: 5px
+
+                    visibility: visible
+    .clear-favorites
+        @include _btn
+        color: $lightgray-4
+        border-radius: 8px
+        font-size: 16px
+        line-height: 20px
+        margin-left: 15px
+        padding: 6px 8px
+        transition: background-color .2s ease-out
+        &:hover
+            background-color: $lightgray-3
+    &-title
+        margin-bottom: 0
+        display: flex
+        align-items: center
+        &__count
+            font-weight: 700
+            font-size: 14px
+            line-height: 14px
+            margin-left: 11px
+            padding: 5px 10px
+            background-color: $red
+            color: $white
+            border-radius: 120px
+    &-catalog
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 38px 20px
+        font-family: 'Nunito Sans'
+        &__item
+            text-decoration: none
+            color: inherit
+            display: flex
+            flex-direction: column
+            position: relative
+            &:hover
+                img
+                    border-radius: 0
+                .buy-btn button
+                    top: 0%
+            img
+                transition: border-radius .15s ease-out
+                border-radius: 10px
+                width: 100%
+            .like
+                width: 36px
+                height: 36px
+                display: flex
+                align-items: center
+                justify-content: center
+                border: 0
+                outline: none
+                cursor: pointer
+                background: rgba(255, 255, 255, 0.8)
+                backdrop-filter: blur(5px)
+                border-radius: 5px
+                position: absolute
+                top: 14px
+                right: 14px
+                svg
+                    fill: $white
+                    stroke: $red
+                    transition: fill .15s ease-in
+                    pointer-events: none
+                &:hover svg
+                    fill: $red
+                &.isFavourite
+                    background-color: rgba(232, 52, 69, .8)
+                    transition: background-color .2s ease-out
+                    &:before
+                        pointer-events: none
+                        content: ''
+                        display: block
+                        border: 0.5px solid $red
+                        opacity: 0
+                        background-color: $white
+                        width: 0px
+                        height: 1px
+                        position: absolute
+                        top: 9px
+                        left: 12px
+                        transform-origin: left
+                        transform: rotate(54deg)
+                        transition: width .15s ease-out, opacity .15s ease-in
+                    &:hover
+                        background-color: $red
+                        svg
+                            stroke: $red
+                            fill: $white
+                        &:before
+                            opacity: 1
+                            width: 17px
+                    svg
+                        stroke: rgba(232, 52, 69, .8)
+            .description
+                max-width: 266px
+                flex: 1 1 auto
+            .price
+                color: $lightgray-4
+            .buy-btn
+                margin-top: 9px
+                transition: height .3s ease-out
+                overflow: hidden
+                display: flex
+                justify-content: space-between
+                align-items: center
+                height: 38px
+                position: relative
+                overflow: hidden
+                button
+                    top: -100%
+                    position: relative
+                    @include _btn
+                    &.for-basket
+                        padding: 10px 22px
+                        background-color: $red
+                        color: $white
+                        border-radius: 5px
+                        transition: top .1s ease-out 0s, background-color .123s ease-out
+                        &:hover
+                            background-color: #F53245
+                    &.order
+                        color: $lightgray-4
+                        transition: color .123s ease-in, top .1s ease-out 0s,
+                        &:hover
+                            color: $red
+
+@media (max-width: 1024px)
+    .main-catalog
+        grid-template-columns: 1fr 1fr 1fr
+        &__item .buy-btn
+            display: none
+
+@media (max-width: 768px)
+    .main-top
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 26px
+    .main-title
+        font-weight: 700
+        font-size: 22px
+        line-height: 30px
+    .main-catalog
+        grid-template-columns: repeat(2, 1fr)
+        &__item
+            height: auto
+
+@media (max-width: 600px)
+    .main-btns
+        display: flex
+    .main-top
+        margin-top: 72px
+        &__btns
+            display: none
+@media (max-width: 425px)
+    .main-catalog
+        grid-template-columns: repeat(1, 1fr)
+        &__item
+            &:not(:nth-child(even))
+                display: none

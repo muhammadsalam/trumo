@@ -55,3 +55,25 @@ function loadmore() {
     const btn = document.querySelector(".load-btn");
     btn.classList.toggle("loading");
 }
+
+function mainCatalog () {
+    const mainCatalog = document.querySelector(".main-catalog");
+    mainCatalog.addEventListener("click", (e) => {
+        if (e.target.classList.contains("for-basket") || e.target.classList.contains("order") || e.target.classList.contains("like"))
+            e.preventDefault();
+        if (!e.target.classList.contains("like")) return;
+        e.target.classList.toggle("isFavourite");
+    });    
+}
+
+// ----- FOOTER -----
+
+function mainFooter () {
+    const footerContentItems = document.querySelectorAll(".footer-content__item");
+
+    footerContentItems.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            item.classList.toggle("active");
+        });
+    });
+}

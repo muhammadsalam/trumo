@@ -1,13 +1,6 @@
-const footerContentItems = document.querySelectorAll(".footer-content__item");
 const filterBtns = document.querySelectorAll(".main-filter__item .btn");
 const filterModals = document.querySelectorAll(".filter-modal");
-const mainCatalog = document.querySelector(".main-catalog");
 
-footerContentItems.forEach((item) => {
-    item.addEventListener("click", (e) => {
-        item.classList.toggle("active");
-    });
-});
 
 for (let i = 0; i < filterBtns.length; i++) {
     filterBtns[i].addEventListener("click", (e) => {
@@ -15,14 +8,6 @@ for (let i = 0; i < filterBtns.length; i++) {
         filterBtns[i].classList.toggle("active");
     });
 }
-
-mainCatalog.addEventListener("click", (e) => {
-    if (e.target.classList.contains("for-basket") || e.target.classList.contains("order") || e.target.classList.contains("like"))
-        e.preventDefault();
-    if (!e.target.classList.contains("like")) return;
-    e.target.classList.toggle("isFavourite");
-});
-
 
 // ------ ползунок ( год произведства ) -------
 
@@ -52,5 +37,7 @@ filterRange.noUiSlider.on('update', function (values, handle, unencoded, isTap, 
 
 sectionToSlider('.free');
 
+mainCatalog();
+mainFooter();
 
 // ------ фильтры в мобилке --------

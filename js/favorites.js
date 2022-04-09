@@ -1,0 +1,2 @@
+mainCatalog();
+mainFooter();
