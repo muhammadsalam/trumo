@@ -330,7 +330,7 @@
         margin-top: 191px
     &-catalog
         display: grid
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: 1fr 1fr 1fr 1fr
         gap: 38px
         font-family: 'Nunito Sans'
         &__item
@@ -538,7 +538,7 @@
         font-size: 22px
         line-height: 30px
     .main-catalog
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: 1fr 1fr
         &__item
             height: auto
     .main-sort
@@ -561,10 +561,7 @@
 
 @media (max-width: 425px)
     .main-catalog
-        grid-template-columns: repeat(1, 1fr)
-        &__item
-            &:not(:nth-child(even))
-                display: none
+        grid-template-columns: 1fr
     .load-btn button
         width: 100%
         svg

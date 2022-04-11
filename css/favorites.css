@@ -1302,7 +1302,7 @@ body.no-scroll {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 38px 20px;
   font-family: "Nunito Sans";
 }
@@ -1488,8 +1488,8 @@ body.no-scroll {
   }
 
   .main-catalog {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .main-catalog__item {
     height: auto;
@@ -1511,10 +1511,7 @@ body.no-scroll {
 }
 @media (max-width: 425px) {
   .main-catalog {
-    -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .main-catalog__item:not(:nth-child(even)) {
-    display: none;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
