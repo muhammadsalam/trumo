@@ -41,3 +41,23 @@ mainCatalog();
 mainFooter();
 
 // ------ фильтры в мобилке --------
+
+// let priceBoost = [];
+// const filterCheckbox = document.querySelector('.filter-modal.price');
+
+// filterCheckbox.addEventListener('change', (e) => {
+//     const value = e.target.value;
+
+//     if(!e.target.checked){
+//         priceBoost = priceBoost.slice(value, value)
+//         return;
+//     }
+
+//     priceBoost[value] = value;
+//     let parent = e.target;
+//     while (!parent.classList.contains('filter-modal')){
+//         parent = parent.parentNode;
+//         console.log(parent);
+//     }
+
+// })

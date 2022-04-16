@@ -174,6 +174,10 @@
                 <div class="main-top">
                     <div class="main-title">Люстры</div>
                     <form class="main-filter">
+                        <div class="main-filter__btns">
+                            <button type="reset" id="filter-reset" disabled>Сбросить</button>
+                            <button type="button" id="filter-accept" disabled>Принять</button>
+                        </div>
                         <h2 class="main-filter__title">Фильтрация</h2>
                         <div class="main-filter__item">
                             <button class="btn" type="button">
@@ -185,7 +189,7 @@
                             </button>
                             <div class="filter-modal price">
                                 <div class="filter-modal__checked">
-                                    <div class="filter-modal__boost">
+                                    <div class="filter-modal__boost" data-check-id="1">
                                         от 20 000 ₽ до 40 000 ₽
                                         <button type="button"></button>
                                     </div>
@@ -308,7 +312,7 @@
                         <div class="main-filter__item">
                             <button class="btn" type="button">
                                 <span>Материал</span>
-                                <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                                <svg viewBox="-1 -16 16 40" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                                 </svg>

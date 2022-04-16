@@ -21,6 +21,38 @@
         max-width: 818px
         font-size: 14px
         font-family: 'Nunito Sans'
+        &__btns
+            display: none
+            padding: 0 var(--cp)
+            width: 100%
+            justify-content: space-between
+            position: fixed
+            z-index: 66
+            bottom: 30px
+            #filter-reset
+                @include _btn
+                flex-grow: 1
+                font-size: 18px
+                padding: 16px 35px
+                border-radius: 5px
+                margin-right: 9px
+                border: 1px solid $lightgray
+                background-color: $white
+                transition: border-color .15s ease-out
+                &:disabled
+                    color: $lightgray
+                    border-color: #F8F8F8
+            #filter-accept
+                @include _btn
+                border-radius: 5px
+                color: $white
+                flex-grow: 1
+                font-size: 18px
+                padding: 16px 39px
+                background-color: $red
+                transition: background-color .15s ease-out
+                &:disabled
+                    background-color: $lightgray
         &__title
             font-size: 22px
             font-weight: 400
@@ -61,6 +93,8 @@
                     svg
                         fill: $red
                         transform: rotate(-180deg)
+                span, svg
+                    pointer-events: none
             svg
                 width: 8px
                 fill: #ccc
@@ -474,12 +508,14 @@
         overflow: auto
         top: 0
         left: 0
-        padding: 80px 0 0
+        padding: 80px 0 454px
         width: 100vw
         height: 100vh
         z-index: 10
         margin-top: 0
         background-color: $white
+        &__btns
+            display: flex
         &__title
             display: block
             font-size: 24px
@@ -495,6 +531,31 @@
             width: 100%
             &:first-of-type
                 border-top: 1px solid #E8E8E8
+            &:last-of-type
+                .btn
+                    svg
+                        border: 1px solid #CCCCCC
+                        border-radius: 5px
+                        width: 50px
+                        height: 50px
+                        transform: translate(21px, -50%)
+                        path
+                            width: 14px
+                            height: 9px
+                    &.active
+                        svg
+                            transform: translate(21px, -50%) rotate(-180deg)
+                .filter-modal
+                    position: fixed
+                    top: 0
+                    width: 100%
+                    height: 100vh
+                    padding: var(--pt) var(--cp)
+                .filter-modal__materials
+                    height: 100%
+                    max-height: 500px
+
+
             .boost
                 display: none
             .btn
@@ -518,6 +579,11 @@
                 &__checked
                     padding: 0 0 21px 0
                     display: flex
+                    &.materials-checked
+                        padding: 0 var(--cp)
+
+                &__range
+                    width: 100%
 
     .free
         position: static
