@@ -532,6 +532,20 @@ body
         path
             fill: inherit
 
+.main-top
+    &__nav
+        margin: 0 auto
+        overflow-x: auto
+        flex-shrink: 0
+    &__link
+        @include _link
+        @include h_redborder(13px)
+        font-size: 14px
+        display: inline-block
+    &__link + &__link
+        margin-left: 20px
+
+
 @media (max-width: 1100px)
     :root
         --pt: 90px
@@ -750,5 +764,13 @@ body
             .popap-closeBtn
                 top: 32px
                 right: 34px
+    
+    .main-top__nav
+            margin-top: 20px
+            width: calc(100% + var(--cp))
+            padding-bottom: 10px
+            padding-right: var(--cp)
+            display: flex
+
     .footer
         margin-top: 100px

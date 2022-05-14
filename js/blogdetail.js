@@ -1,0 +1,2 @@
+sectionToSlider('.free');
+mainFooter();

@@ -1,0 +1,170 @@
+@import style
+
+.blogdetail
+    padding-top: var(--pt)
+
+.main-top
+    display: flex
+    margin-top: 100px
+    margin-bottom: 50px
+
+.blog-item .blog-item
+    &__top
+        margin-bottom: 33px
+        time
+            color: #959595
+        span
+            color: $red
+            margin-left: 24px
+    &__title
+        color: #121212
+        font-size: 48px
+        font-weight: 700
+        margin: 0 0 30px
+        max-width: 714px
+    &__flex
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__ph p
+        line-height: 27px
+        max-width: 859px
+        margin: 0
+        color: #262626
+    &__img
+        max-width: 800px
+        display: inline-flex
+        flex-direction: column
+        img
+            width: 100%
+            justify-self: center
+            border-radius: 20px
+        p
+            font-style: italic
+            margin: 23px 0 0
+            color: #a1a1a1
+            display: inline-block
+    &__h2 h2
+        font-weight: 700
+        font-size: 32px
+        line-height: 48px
+        color: #121212
+        margin: 0
+    &__h3 h3
+        font-size: 22px
+        font-weight: 700
+        line-height: 24px
+        color: #121212
+        margin: 0
+    &__quote
+        margin-top: 132px
+        display: flex
+        .blog-quote__container
+            max-width: 733px
+            margin: 0 67px 0 auto
+        h3
+            font-style: italic
+            font-size: 26px
+            line-height: 24px
+            color: #121212
+            margin: 0 0 24px
+            font-weight: 400
+        p
+            margin: 0
+            font-size: 16px
+            line-height: 27px
+            color: #121212
+
+.blog-nav
+    margin: 110px 0 82px
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    &__item
+        max-width: 520px
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-decoration: none
+        border-top: 1px solid #EFEFEF
+        padding: 24px 36px
+        position: relative
+        transition: .123s ease-out border-top-color
+        &:hover, &:focus
+            border-top-color: $red
+        svg
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+        &-left svg
+            left: 15px
+        &-right svg
+            transform: translateY(-50%) rotateZ(180deg)
+            right: 15px
+        span
+            font-size: 15px
+            color: #959595
+            margin-bottom: 6px
+        h5
+            margin: 0
+            font-weight: 600
+            font-size: 18px
+            line-height: 20px
+            color: $black
+                
+@media (max-width: 1180px)
+    .blog-item__ph
+        max-width: 100% !important
+        p
+            max-width: 100% !important
+
+@media (max-width: 768px)
+    .blog-item
+        &__top
+            justify-content: center
+            display: flex
+        .blog-item__img.lg-fill
+            width: calc(100% + var(--cp) + var(--cp))
+            margin-left: calc(-1 * var(--cp))
+            margin-top: 36px
+            img
+                border-radius: 0
+        & &__title
+            font-size: 22px
+            margin-bottom: 24px
+            text-align: center
+        & &__h2 h2
+            font-size: 18px
+        & &__img p
+            font-size: 14px
+            line-height: auto
+            margin-top: 20px
+        & &__quote
+            margin-top: 53px
+            text-align: center
+            .blog-quote__container
+                margin: 0
+            h3
+                font-size: 18px
+            p
+                font-size: 14px
+                line-height: 19px
+
+    .blog-nav
+        flex-direction: column
+        gap: 0
+        border-bottom: 1px solid #EFEFEF
+        &__item
+            width: calc(100% + var(--cp) + var(--cp))
+            margin-left: calc(-1 * var(--cp))
+            max-width: none
+
+@media (max-width: 420px)
+    .blog-nav__item
+        padding: 12px 62px
+        text-align: center
+        &-left svg
+            left: 32px
+        &-right svg
+            right: 32px
