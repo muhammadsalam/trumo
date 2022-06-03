@@ -37,7 +37,7 @@ function closeTooltipButton() {
 }
 
 function sectionToSlider(el) {
-    if (window.innerWidth <= 768) {
+    if (window.outerWidth <= 768) {
         const swiper = new Swiper(el, {
             slidesPerView: "auto",
             spaceBetween: 20,

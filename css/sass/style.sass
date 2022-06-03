@@ -3,6 +3,7 @@ $lightgray: #C4C4C4
 $lightgray-2: #D4D4D4
 $lightgray-3: #F5F5F5
 $lightgray-4: #818181
+$lightgray-5: #787878
 $red: #E83445
 $darkred: #D41C2E
 $_darkred: #cf3242
@@ -142,6 +143,7 @@ body
     display: flex
     justify-content: space-between
     align-items: center
+    margin-bottom: 30px
     &__title
         font-size: 30px
         margin: 0
@@ -152,10 +154,9 @@ body
 
 .free hr
     border: 1px solid #EFEFEF
-    margin: 28px 0 20px
+    margin: 0 0 20px
 
 .free
-    width: calc(100% + var(--cp))
     .blog
         display: grid
         grid-template-columns: 1fr 1fr 1fr 1fr
@@ -677,17 +678,21 @@ body
         margin-bottom: 10px
 
     .free
+        width: calc(100% + var(--cp))
         position: relative
         hr
             display: none
-        .blog
-            display: flex
-            grid-template-columns: none
-            gap: 0
-            &-item
-                max-width: 255px
-                &__img
-                    width: 100%
+        .swiper-wrapper
+            display: flex !important
+            grid-template-columns: none !important
+            gap: 0 !important
+        .swiper-slide
+            max-width: 255px
+        .blog-item__img
+            width: 100%
+
+    .free.similar-slider .swiper-slide
+        max-width: 309px
 
     .footer
         margin-top: 150px
