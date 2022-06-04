@@ -16,16 +16,16 @@
 
 .product
     &-slider-2
+        max-height: 568px
+        margin-bottom: 18px
         .swiper-slide img
             width: 100%
     &-slider-1
         .swiper-slide
-            max-width: 176px
+            cursor: pointer
             img
                 width: 100%
-                mix-blend-mode: luminosity
-            &.swiper-slide-active img
-                mix-blend-mode: normal
+                filter: grayscale(1)
     &-item
         background-color: #F6F6F6
         padding: 70px 0 96px
@@ -37,21 +37,36 @@
             grid-column: 1 / 2
             grid-row: 1 / 3
             max-width: 568px
+            margin-right: 20px
         &__top
             grid-column: 2 / 3
             grid-row: 1 / 2
             display: flex
             align-items: flex-start
             justify-content: space-between
+            margin-left: auto
+            width: 100%
             max-width: 490px
             h1
                 font-size: 25px
-                color: #000
+                color: $black
                 margin: 0 0 12px
                 max-width: 385px
             button
                 @include _btn
+                line-height: 0
+                margin-top: 8px
+                svg
+                    pointer-events: none
+                    fill: none
+                    stroke: $black
+                    path
+                        transition: .2s ease-in
+                &.active svg
+                        fill: $red
+                        stroke: $red
         &__info
+            margin-left: auto
             grid-column: 2 / 3
             grid-row: 2 / 3
             max-width: 490px
@@ -217,6 +232,11 @@
     margin: 0
     width: 100%
 
+@media (max-width: 1024px)
+    .product-item
+        &__inner
+            grid-template-columns: 50% 50%
+
 @media (max-width: 768px)
     .header .container-lg
         position: absolute
@@ -229,6 +249,40 @@
         justify-content: space-between
         align-items: center
     
+    .product-slider-2
+        max-height: 100%
+        margin-bottom: 10px
+        
+    .product-item
+        padding: 20px 0 36px
+        &__inner
+            grid-template-columns: 100%
+        &__slider
+            grid-row: auto
+            margin: 0
+            max-width: 100%
+            margin-bottom: 20px
+        &__top
+            max-width: 100%
+            grid-column: 1/2
+            margin: 0 0 20px 0
+            h1
+                font-size: 18px
+        &__info
+            display: flex
+            flex-direction: column
+            max-width: 100%
+            margin-left: 0
+            grid-column: 1/2
+            grid-row: 3/4
+        &__btns
+            display: flex
+            justify-content: space-between
+            order: -1
+            margin: 0 0 14px
+            button
+                flex-basis: calc(50% - 10px)
+
     .free.similar-slider
         margin-bottom: 110px
 
@@ -238,3 +292,14 @@
 @media (max-width: 600px)
     .header .container-lg
         padding: 0 var(--cp)
+
+    .product-item
+        &__btns
+            flex-direction: column
+            button
+                flex-basis: auto
+            #add-to-cart
+                padding: 13px 10px
+            #fast-order
+                margin: 7px 0 0
+                padding: 13px 10px

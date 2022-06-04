@@ -3,7 +3,7 @@ sectionToSlider('.free.similar-slider');
 mainFooter();
 
 let productSlider = new Swiper(".product-slider-1", {
-    spaceBetween: 20,
+    spaceBetween: window.outerWidth < 768 ? 10 : 20,
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
@@ -15,3 +15,16 @@ let productSliderThumbs = new Swiper(".product-slider-2", {
         swiper: productSlider,
     },
 });
+
+function activeButton (e) {
+    if(e.target.tagName == 'BUTTON'){
+        e.target.classList.toggle('active');
+    }
+}
+
+document.querySelector('.similar').addEventListener('click', (e) => {
+    if(e.target.classList.contains('like')){
+        e.preventDefault();
+        e.target.classList.toggle('isFavourite')
+    }
+})
