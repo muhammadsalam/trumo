@@ -195,26 +195,26 @@
                                     </div>
                                 </div>
                                 <div class="filter-modal__inner">
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="0"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="0" />
                                         <div class="filter-square"></div><span>до 20 000 ₽</span>
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="1"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="1" />
                                         <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="2"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="2" />
                                         <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="3"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="3" />
                                         <div class="filter-square"></div><span>от 40 000 ₽ до 70</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="4"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="4" />
                                         <div class="filter-square"></div><span>от 70 000 ₽ до 90</span>
                                         000 ₽
                                     </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="5"/>
+                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="5" />
                                         <div class="filter-square"></div><span>от 90 000 ₽</span>
                                     </label>
                                 </div>
@@ -242,9 +242,11 @@
                             </button>
                             <div class="filter-modal productionyear">
                                 <div class="filter-modal__inner">
+                                    <input type="hidden" value="1930" id="filter-number-1">
+                                    <input type="hidden" value="2022" id="filter-number-2">
                                     <div class="count">
                                         <number>1930</number>
-                                        <number>2022</numb>
+                                        <number>2022</number>
                                     </div>
                                     <div id="productionyear" class="filter-modal__range"></div>
                                 </div>
@@ -304,10 +306,10 @@
                                     <path
                                         d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                                 </svg>
-                                </butt>
-                                <div class="filter-modal">
-                                    <div class="filter-modal__inner"></div>
-                                </div>
+                            </button>
+                            <div class="filter-modal">
+                                <div class="filter-modal__inner"></div>
+                            </div>
                         </div>
                         <div class="main-filter__item">
                             <button class="btn" type="button">
@@ -318,6 +320,21 @@
                                 </svg>
                             </button>
                             <div class="filter-modal materials-modal">
+                                <div class="materials-modal-top">
+                                    <button type="button" class="materials-modal-back" onclick="toggleMaterials()">
+                                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.319056 5.64876L5.4486 9.78495C6.05213 10.2731 7 9.87637 7 9.13555L7 0.863165C7.00015 0.697369 6.94845 0.535045 6.85109 0.395634C6.75373 0.256222 6.61483 0.145633 6.45103 0.0771084C6.28723 0.00858304 6.10547 -0.0149718 5.92751 0.00926395C5.74956 0.0334997 5.58296 0.104499 5.44766 0.213758L0.319992 4.34995C0.219488 4.4309 0.138937 4.53073 0.0837457 4.64274C0.0285542 4.75474 -7.29712e-07 4.87634 -7.35089e-07 4.99936C-7.40467e-07 5.12237 0.0285542 5.24397 0.0837457 5.35598C0.138937 5.46798 0.218553 5.56781 0.319056 5.64876Z"
+                                                fill="black" />
+                                        </svg>
+                                        Вернуться к фильтрам
+                                    </button>
+                                    <div class="materials-modal-title">
+                                        Материалы
+                                        <span>0</span>
+                                    </div>
+                                </div>
                                 <div class="filter-modal__inner">
                                     <input type="text" placeholder="Найти материал" class="filter-modal__search">
                                     <div class="filter-modal__materials">
@@ -545,35 +562,35 @@
                     </div>
                     <hr>
                     <div class="blog swiper-wrapper">
-                        <div class="blog-item swiper-slide">
+                        <a href="#" class="blog-item swiper-slide">
                             <img src="img/blog/blog-1.jpg" alt="Желтное кресло — акцент или аутизм?"
                                 class="blog-item__img">
                             <span class="blog-item__group">История</span>
                             <h3 class="blog-item__title">Желтное кресло — акцент или аутизм?</h3>
                             <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
-                        </div>
-                        <div class="blog-item swiper-slide">
+                        </a>
+                        <a href="#" class="blog-item swiper-slide">
                             <img class="blog-item__img" src="img/blog/blog-2.jpg"
                                 alt="Желтное кресло — акцент или аутизм?" class="blog-item__img">
                             <span class="blog-item__group">Реставрация</span>
                             <h3 class="blog-item__title">Этот стул выглядит неплохо</h3>
                             <p class="blog-item__desc">Если в заголовке одна строка до подзаголовок может иметь три
                                 строки и наоборот.</p>
-                        </div>
-                        <div class="blog-item swiper-slide">
+                        </a>
+                        <a href="#" class="blog-item swiper-slide">
                             <img src="img/blog/blog-3.jpg" alt="Желтное кресло — акцент или аутизм?"
                                 class="blog-item__img">
                             <span class="blog-item__group">История</span>
                             <h3 class="blog-item__title">Советская мебель в соверменном интерьере</h3>
                             <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
-                        </div>
-                        <div class="blog-item swiper-slide">
+                        </a>
+                        <a href="#" class="blog-item swiper-slide">
                             <img src="img/blog/blog-4.jpg" alt="Желтное кресло — акцент или аутизм?"
                                 class="blog-item__img">
                             <span class="blog-item__group">Интерьеры</span>
                             <h3 class="blog-item__title">Невероятная стена оранжевого цвета.</h3>
                             <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </main>

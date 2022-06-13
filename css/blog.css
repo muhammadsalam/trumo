@@ -146,6 +146,8 @@ body.no-scroll {
   gap: 38px;
 }
 .free .blog .blog-item {
+  text-decoration: none;
+  color: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

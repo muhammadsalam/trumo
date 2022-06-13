@@ -25,6 +25,6 @@ function activeButton (e) {
 document.querySelector('.similar').addEventListener('click', (e) => {
     if(e.target.classList.contains('like')){
         e.preventDefault();
-        e.target.classList.toggle('isFavourite')
+        e.target.remove()
     }
 })
