@@ -1,11 +1,8 @@
 @import style
 
-.categories
-    padding-top: var(--pt)
-
 .main
-    margin-top: 80px
     &-title
+        margin: 80px 0 52px
         margin-bottom: 52px
     &-list
         display: grid
@@ -201,7 +198,8 @@
                 display: none
 @media (max-width: 600px)
     .main
-        margin-top: 72px
+        &-title
+            margin-top: 72px
         .tooltip-popap .popap
             margin: 50px auto
 

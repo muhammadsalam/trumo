@@ -51,6 +51,13 @@ body
     max-width: 1180px
     padding: 0 var(--cp)
 
+.inner
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    padding-top: var(--pt)
+    .main
+        flex-grow: 1
 .logo
     display: inline-block
     padding-bottom: 9px
@@ -138,6 +145,7 @@ body
     font-size: 35px
     margin: 0
     color: $black
+    font-weight: 400
 
 .free-top
     display: flex
@@ -565,11 +573,9 @@ body
 
 @media (max-width: 768px)
     .header
-        position: absolute
-        top: 20px
+        padding-right: 0
         left: 0
         width: 100%
-        padding: 10px 10px
         z-index: 10
         display: flex
         justify-content: space-between
@@ -677,7 +683,10 @@ body
             display: flex
 
     .main-title
-        margin-bottom: 10px
+        font-size: 22px
+        font-weight: 700
+        margin-bottom: 10px !important
+        margin-top: 40px !important
 
     .free
         width: calc(100% + var(--cp))
@@ -748,8 +757,9 @@ body
         --pt: 20px
         --cp: 32px
     .header
-        padding: 0 var(--cp)
-        .header-inner
+        &.active
+            padding: 0 var(--cp)
+        & &-inner
             padding-top: calc(var(--pt) + 60px)
         &-catalog__btn
             font-size: 22px
