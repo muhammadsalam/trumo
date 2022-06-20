@@ -1,10 +1,9 @@
 @import style
 
 
-.product
-    padding-top: var(--pt)
-
 .header
+    &.active
+        padding: 0 !important
     display: block
     padding: 0
     .container-lg
@@ -12,7 +11,7 @@
         padding-right: 25px
 
 .main
-    margin-top: 62px
+    margin-top: 32px
 
 .product
     &-slider-2
@@ -239,11 +238,8 @@
 
 @media (max-width: 768px)
     .header .container-lg
-        position: absolute
-        top: 20px
         left: 0
         width: 100%
-        padding: 10px 10px
         z-index: 10
         display: flex
         justify-content: space-between
@@ -290,9 +286,6 @@
         padding: 0
 
 @media (max-width: 600px)
-    .header .container-lg
-        padding: 0 var(--cp)
-
     .product-item
         &__btns
             flex-direction: column

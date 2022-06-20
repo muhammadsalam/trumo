@@ -1042,8 +1042,6 @@ body.no-scroll {
   .main-title {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 10px !important;
-    margin-top: 40px !important;
   }
 
   .free {
@@ -1066,6 +1064,15 @@ body.no-scroll {
   }
   .free .blog-item__img {
     width: 100%;
+  }
+  .free-top {
+    margin-bottom: 24px;
+  }
+  .free-top__title {
+    font-size: 22px;
+  }
+  .free-top__link {
+    display: none;
   }
 
   .free.similar-slider .swiper-slide {
@@ -1196,10 +1203,6 @@ body.no-scroll {
     margin-top: 100px;
   }
 }
-.blog {
-  padding-top: var(--pt);
-}
-
 .main {
   margin-top: 69px;
 }
@@ -1327,8 +1330,8 @@ body.no-scroll {
   }
 }
 @media (max-width: 768px) {
-  .main-title {
-    margin-bottom: 0;
+  .main {
+    margin-top: 40px;
   }
 
   .blog-list {

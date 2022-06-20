@@ -1,8 +1,5 @@
 @import style
 
-.catalog
-    padding-top: var(--pt)
-
 .main
     &-top
         display: flex
@@ -532,6 +529,8 @@
         flex-direction: row
         justify-content: space-between
         align-items: center
+    .main-title
+        margin: 0 !important
     .main-filter
         display: none
         flex-direction: column
@@ -651,7 +650,7 @@
 
 @media (max-width: 600px)
     .main-top
-        margin-top: 72px
+        margin-top: 40px
     .main-filter__title
         font-size: 22px
     .main-filter__item

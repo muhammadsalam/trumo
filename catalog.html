@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -22,642 +22,640 @@
 </head>
 
 <body>
-    <section class="catalog">
-        <div class="container">
-            <header class="header">
-                <a href="/" class="logo">
-                    <img src="img/logo.svg" alt="трюмо">
-                </a>
-                <div class="header-inner">
-                    <div class="header-catalog">
-                        <button class="header-catalog__btn" onclick="headerCatalogBtn()">
-                            <div>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            Каталог
-                            <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                            </svg>
-                        </button>
-                        <ul class="header-catalog__list">
-                            <li>
-                                <a href="#">
-                                    <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.29571 2.87873C1.35135 2.65615 1.55134 2.5 1.78078 2.5H5.21922C5.44866 2.5 5.64865 2.65615 5.70429 2.87873L6.2043 4.87873C6.28319 5.19431 6.04451 5.5 5.71922 5.5H1.28078C0.955491 5.5 0.716812 5.19431 0.795705 4.87873L1.29571 2.87873Z"
-                                            stroke-linejoin="round" />
-                                        <path d="M3.5 6V12" stroke-linejoin="round" />
-                                        <path d="M5 12L2 12" stroke-linejoin="round" />
-                                    </svg>
-                                    Торшеры
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M7.46134 7.847C7.39488 7.64022 7.20252 7.5 6.98533 7.5L2.01467 7.5C1.79748 7.5 1.60512 7.64022 1.53866 7.84699L0.895803 9.84699C0.79206 10.1698 1.0328 10.5 1.37182 10.5L7.62818 10.5C7.9672 10.5 8.20794 10.1698 8.1042 9.847L7.46134 7.847Z"
-                                            stroke-linejoin="round" />
-                                        <path d="M4.5 8L4.5 3" stroke-linejoin="round" />
-                                        <path d="M1.5 3L7.5 3" stroke-linejoin="round" />
-                                    </svg>
-                                    Люстры
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.65803 11.0707C1.69322 11.317 1.90418 11.5 2.15301 11.5H6.84699C7.09582 11.5 7.30678 11.317 7.34197 11.0707L8.34196 4.07071C8.385 3.76949 8.15126 3.5 7.84699 3.5H1.15301C0.848735 3.5 0.615004 3.76949 0.658035 4.07071L1.65803 11.0707Z"
-                                            stroke-linejoin="round" />
-                                    </svg>
-
-                                    Кашпо
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_690_3454)">
-                                            <path d="M0.5 11.5H8.5V3.5H0.5V11.5Z" />
-                                            <path d="M4.5765 7.5L5.43365 13.5H9.56635L10.4235 7.5H4.5765Z" />
-                                            <path d="M-1.4235 2.5L-0.566352 8.5H3.56635L4.4235 2.5H-1.4235Z" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_690_3454">
-                                                <rect width="9" height="9" rx="1" transform="matrix(1 0 0 -1 0 12)"
-                                                    fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-
-                                    Лингравюры
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M1.37232 2.92929C1.40751 2.68296 1.61847 2.5 1.8673 2.5H5.1327C5.38153 2.5 5.59249 2.68296 5.62768 2.92929L6.34197 7.92929C6.385 8.23051 6.15127 8.5 5.84699 8.5H1.15301C0.848735 8.5 0.615004 8.23051 0.658035 7.92929L1.37232 2.92929Z"
-                                            stroke-linejoin="round" />
-                                        <path d="M3.5 9V12" stroke-linejoin="round" />
-                                        <path d="M0 12H7" stroke-linejoin="round" />
-                                    </svg>
-
-                                    Настольные лампы
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <nav class="header-nav">
-                        <a href="#" class="header-nav__link">Блог</a>
-                        <a href="#" class="header-nav__link">О нас</a>
-                        <a href="#" class="header-nav__link">Контакты</a>
-                    </nav>
-                </div>
-                <div class="header-right">
-                    <form class="header-form">
-                        <button type="button" onclick="headerSearchButton()" class="header-form__btn">
-                            <label for="search-input">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M6.5 12C7.22227 12 7.93747 11.8577 8.60476 11.5813C9.27205 11.3049 9.87837 10.8998 10.3891 10.3891C10.8998 9.87837 11.3049 9.27205 11.5813 8.60476C11.8577 7.93747 12 7.22227 12 6.5C12 5.77773 11.8577 5.06253 11.5813 4.39524C11.3049 3.72795 10.8998 3.12163 10.3891 2.61091C9.87837 2.10019 9.27205 1.69506 8.60476 1.41866C7.93747 1.14226 7.22227 1 6.5 1C5.04131 1 3.64236 1.57946 2.61091 2.61091C1.57946 3.64236 1 5.04131 1 6.5C1 7.95869 1.57946 9.35764 2.61091 10.3891C3.64236 11.4205 5.04131 12 6.5 12V12ZM13 6.5C13 8.22391 12.3152 9.87721 11.0962 11.0962C9.87721 12.3152 8.22391 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.684819 9.87721 0 8.22391 0 6.5C0 4.77609 0.684819 3.12279 1.90381 1.90381C3.12279 0.684819 4.77609 0 6.5 0C8.22391 0 9.87721 0.684819 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5V6.5Z"
-                                        fill="black" />
-                                    <path
-                                        d="M10.344 11.742C10.374 11.782 10.406 11.82 10.442 11.857L14.292 15.707C14.4795 15.8947 14.7339 16.0001 14.9991 16.0002C15.2644 16.0003 15.5189 15.895 15.7065 15.7075C15.8941 15.52 15.9996 15.2656 15.9997 15.0004C15.9998 14.7351 15.8945 14.4807 15.707 14.293L11.857 10.443C11.8212 10.4068 11.7828 10.3734 11.742 10.343C11.3497 10.8779 10.8783 11.35 10.344 11.743V11.742Z"
-                                        fill="black" />
-                                </svg>
-                            </label>
-                        </button>
-                        <input id="search-input" onfocus="formToggle()" onblur="formToggle()" class="header-form__input"
-                            type="text" placeholder="Поиск по названию">
-                    </form>
-                    <a class="header-favorites" href="#">
-                        <span class="data-new">1</span>
-                        <svg width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+    <div class="container inner">
+        <header class="header">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="трюмо">
+            </a>
+            <div class="header-inner">
+                <div class="header-catalog">
+                    <button class="header-catalog__btn" onclick="headerCatalogBtn()">
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        Каталог
+                        <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                             <path
-                                d="M8.7666 2.14304C4.25488 -2.03994 -6.27941 5.86803 8.94131 16C24.162 5.86703 13.6268 -2.04194 9.11602 2.14404C9.0556 2.19839 8.99732 2.2551 8.94131 2.31404C8.88473 2.25504 8.82616 2.19804 8.7666 2.14304Z" />
+                                d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                         </svg>
-                    </a>
-                    <a href="#" class="header-basket">
-                        <span class="data-new">15</span>
-                        <span class="header-basket__title">Корзина</span>
-                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M-0.000610352 1.125C-0.000610352 0.95924 0.0652377 0.800269 0.182448 0.683058C0.299658 0.565848 0.458629 0.5 0.62439 0.5H2.49939C2.6388 0.500039 2.7742 0.546688 2.88405 0.632531C2.9939 0.718374 3.0719 0.83848 3.10564 0.97375L3.61189 3H18.1244C18.2193 3.00003 18.313 3.02168 18.3983 3.06332C18.4836 3.10495 18.5584 3.16548 18.6168 3.2403C18.6752 3.31512 18.7158 3.40227 18.7356 3.49513C18.7553 3.588 18.7536 3.68414 18.7306 3.77625L16.8556 11.2763C16.8219 11.4115 16.7439 11.5316 16.6341 11.6175C16.5242 11.7033 16.3888 11.75 16.2494 11.75H4.99939C4.85998 11.75 4.72458 11.7033 4.61473 11.6175C4.50487 11.5316 4.42688 11.4115 4.39314 11.2763L2.01189 1.75H0.62439C0.458629 1.75 0.299658 1.68415 0.182448 1.56694C0.0652377 1.44973 -0.000610352 1.29076 -0.000610352 1.125ZM3.92439 4.25L4.54939 6.75H6.24939V4.25H3.92439ZM7.49939 4.25V6.75H9.99939V4.25H7.49939ZM11.2494 4.25V6.75H13.7494V4.25H11.2494ZM14.9994 4.25V6.75H16.6994L17.3244 4.25H14.9994ZM16.3869 8H14.9994V10.5H15.7619L16.3869 8ZM13.7494 8H11.2494V10.5H13.7494V8ZM9.99939 8H7.49939V10.5H9.99939V8ZM6.24939 8H4.86189L5.48689 10.5H6.24939V8ZM6.24939 14.25C5.91787 14.25 5.59993 14.3817 5.36551 14.6161C5.13109 14.8505 4.99939 15.1685 4.99939 15.5C4.99939 15.8315 5.13109 16.1495 5.36551 16.3839C5.59993 16.6183 5.91787 16.75 6.24939 16.75C6.58091 16.75 6.89885 16.6183 7.13327 16.3839C7.36769 16.1495 7.49939 15.8315 7.49939 15.5C7.49939 15.1685 7.36769 14.8505 7.13327 14.6161C6.89885 14.3817 6.58091 14.25 6.24939 14.25ZM3.74939 15.5C3.74939 14.837 4.01278 14.2011 4.48162 13.7322C4.95046 13.2634 5.58635 13 6.24939 13C6.91243 13 7.54832 13.2634 8.01716 13.7322C8.486 14.2011 8.74939 14.837 8.74939 15.5C8.74939 16.163 8.486 16.7989 8.01716 17.2678C7.54832 17.7366 6.91243 18 6.24939 18C5.58635 18 4.95046 17.7366 4.48162 17.2678C4.01278 16.7989 3.74939 16.163 3.74939 15.5ZM14.9994 14.25C14.6679 14.25 14.3499 14.3817 14.1155 14.6161C13.8811 14.8505 13.7494 15.1685 13.7494 15.5C13.7494 15.8315 13.8811 16.1495 14.1155 16.3839C14.3499 16.6183 14.6679 16.75 14.9994 16.75C15.3309 16.75 15.6489 16.6183 15.8833 16.3839C16.1177 16.1495 16.2494 15.8315 16.2494 15.5C16.2494 15.1685 16.1177 14.8505 15.8833 14.6161C15.6489 14.3817 15.3309 14.25 14.9994 14.25ZM12.4994 15.5C12.4994 14.837 12.7628 14.2011 13.2316 13.7322C13.7005 13.2634 14.3363 13 14.9994 13C15.6624 13 16.2983 13.2634 16.7672 13.7322C17.236 14.2011 17.4994 14.837 17.4994 15.5C17.4994 16.163 17.236 16.7989 16.7672 17.2678C16.2983 17.7366 15.6624 18 14.9994 18C14.3363 18 13.7005 17.7366 13.2316 17.2678C12.7628 16.7989 12.4994 16.163 12.4994 15.5Z"
-                                fill="black" />
-                        </svg>
-                    </a>
-                </div>
-                <button class="header-btn" onclick="headerToggle()">
-                    <span></span>
-                </button>
-                <div class="header-form__popap">
-                    <button class="popap-closeBtn" onclick="closeSearchButton()">
-                        <span></span>
                     </button>
-                    <div class="popap-title">Поиск</div>
-                    <input type="text" />
+                    <ul class="header-catalog__list">
+                        <li>
+                            <a href="#">
+                                <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.29571 2.87873C1.35135 2.65615 1.55134 2.5 1.78078 2.5H5.21922C5.44866 2.5 5.64865 2.65615 5.70429 2.87873L6.2043 4.87873C6.28319 5.19431 6.04451 5.5 5.71922 5.5H1.28078C0.955491 5.5 0.716812 5.19431 0.795705 4.87873L1.29571 2.87873Z"
+                                        stroke-linejoin="round" />
+                                    <path d="M3.5 6V12" stroke-linejoin="round" />
+                                    <path d="M5 12L2 12" stroke-linejoin="round" />
+                                </svg>
+                                Торшеры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.46134 7.847C7.39488 7.64022 7.20252 7.5 6.98533 7.5L2.01467 7.5C1.79748 7.5 1.60512 7.64022 1.53866 7.84699L0.895803 9.84699C0.79206 10.1698 1.0328 10.5 1.37182 10.5L7.62818 10.5C7.9672 10.5 8.20794 10.1698 8.1042 9.847L7.46134 7.847Z"
+                                        stroke-linejoin="round" />
+                                    <path d="M4.5 8L4.5 3" stroke-linejoin="round" />
+                                    <path d="M1.5 3L7.5 3" stroke-linejoin="round" />
+                                </svg>
+                                Люстры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.65803 11.0707C1.69322 11.317 1.90418 11.5 2.15301 11.5H6.84699C7.09582 11.5 7.30678 11.317 7.34197 11.0707L8.34196 4.07071C8.385 3.76949 8.15126 3.5 7.84699 3.5H1.15301C0.848735 3.5 0.615004 3.76949 0.658035 4.07071L1.65803 11.0707Z"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                                Кашпо
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_690_3454)">
+                                        <path d="M0.5 11.5H8.5V3.5H0.5V11.5Z" />
+                                        <path d="M4.5765 7.5L5.43365 13.5H9.56635L10.4235 7.5H4.5765Z" />
+                                        <path d="M-1.4235 2.5L-0.566352 8.5H3.56635L4.4235 2.5H-1.4235Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_690_3454">
+                                            <rect width="9" height="9" rx="1" transform="matrix(1 0 0 -1 0 12)"
+                                                fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                Лингравюры
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.37232 2.92929C1.40751 2.68296 1.61847 2.5 1.8673 2.5H5.1327C5.38153 2.5 5.59249 2.68296 5.62768 2.92929L6.34197 7.92929C6.385 8.23051 6.15127 8.5 5.84699 8.5H1.15301C0.848735 8.5 0.615004 8.23051 0.658035 7.92929L1.37232 2.92929Z"
+                                        stroke-linejoin="round" />
+                                    <path d="M3.5 9V12" stroke-linejoin="round" />
+                                    <path d="M0 12H7" stroke-linejoin="round" />
+                                </svg>
+
+                                Настольные лампы
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </header>
-            <main class="main">
-                <div class="main-top">
-                    <div class="main-title">Люстры</div>
-                    <form class="main-filter">
-                        <div class="main-filter__btns">
-                            <button type="reset" id="filter-reset" disabled>Сбросить</button>
-                            <button type="button" id="filter-accept" disabled>Принять</button>
-                        </div>
-                        <h2 class="main-filter__title">Фильтрация</h2>
-                        <div class="main-filter__item">
-                            <button class="btn" type="button">
-                                <span>Цена</span>
-                                <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                                </svg>
-                            </button>
-                            <div class="filter-modal price">
-                                <div class="filter-modal__checked">
-                                    <div class="filter-modal__boost" data-check-id="1">
-                                        от 20 000 ₽ до 40 000 ₽
-                                        <button type="button"></button>
-                                    </div>
-                                </div>
-                                <div class="filter-modal__inner">
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="0" />
-                                        <div class="filter-square"></div><span>до 20 000 ₽</span>
-                                    </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="1" />
-                                        <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
-                                        000 ₽
-                                    </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="2" />
-                                        <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
-                                        000 ₽
-                                    </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="3" />
-                                        <div class="filter-square"></div><span>от 40 000 ₽ до 70</span>
-                                        000 ₽
-                                    </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="4" />
-                                        <div class="filter-square"></div><span>от 70 000 ₽ до 90</span>
-                                        000 ₽
-                                    </label>
-                                    <label class="filter-modal__item"><input type="checkbox" name="price[]" value="5" />
-                                        <div class="filter-square"></div><span>от 90 000 ₽</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-filter__item">
-                            <button class="btn" type="button">
-                                <span>Размеры</span>
-                                <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                                </svg>
-                            </button>
-                            <div class="filter-modal">
-                                <div class="filter-modal__inner"></div>
-                            </div>
-                        </div>
-                        <div class="main-filter__item">
-                            <button class="btn" type="button">
-                                <span>Год произведения</span>
-                                <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                                </svg>
-                            </button>
-                            <div class="filter-modal productionyear">
-                                <div class="filter-modal__inner">
-                                    <input type="hidden" value="1930" id="filter-number-1">
-                                    <input type="hidden" value="2022" id="filter-number-2">
-                                    <div class="count">
-                                        <number>1930</number>
-                                        <number>2022</number>
-                                    </div>
-                                    <div id="productionyear" class="filter-modal__range"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-filter__item">
-                            <button class="btn" type="button">
-                                <span>Стиль</span>
-                                <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                                </svg>
-                            </button>
-                            <span class="boost">
-                                <span>2</span>
-                                <span class="cross">
-                                    <span></span>
-                                    <span></span>
-                                </span>
-                            </span>
-                            <div class="filter-modal">
-                                <div class="filter-modal__inner"></div>
-                            </div>
-                        </div>
-                        <div class="main-filter__item">
-                            <button class="btn" type="button">
-                                <span>Наличие</span>
-                                <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                                </svg>
-                            </button>
-                            <div class="filter-modal availability">
-                                <div class="filter-modal__inner">
-                                    <label class="filter-modal__item">
-                                        <input type="radio" name="availability">
-                                        <div class="filter-circle"></div>
-                                        В наличии
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="radio" name="availability">
-                                        <div class="filter-circle"></div>
-                                        На заказ
-                                    </label>
-                                    <label class="filter-modal__item">
-                                        <input type="radio" name="availability">
-                                        <div class="filter-circle"></div>
-                                        Еще вариант
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="main-filter__item">
-                            <button class="btn" type="button">
-                                <span>Кол-во ламп</span>
-                                <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                                </svg>
-                            </button>
-                            <div class="filter-modal">
-                                <div class="filter-modal__inner"></div>
-                            </div>
-                        </div>
-                        <div class="main-filter__item">
-                            <button class="btn" type="button">
-                                <span>Материал</span>
-                                <svg viewBox="-1 -16 16 40" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
-                                </svg>
-                            </button>
-                            <div class="filter-modal materials-modal">
-                                <div class="materials-modal-top">
-                                    <button type="button" class="materials-modal-back" onclick="toggleMaterials()">
-                                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M0.319056 5.64876L5.4486 9.78495C6.05213 10.2731 7 9.87637 7 9.13555L7 0.863165C7.00015 0.697369 6.94845 0.535045 6.85109 0.395634C6.75373 0.256222 6.61483 0.145633 6.45103 0.0771084C6.28723 0.00858304 6.10547 -0.0149718 5.92751 0.00926395C5.74956 0.0334997 5.58296 0.104499 5.44766 0.213758L0.319992 4.34995C0.219488 4.4309 0.138937 4.53073 0.0837457 4.64274C0.0285542 4.75474 -7.29712e-07 4.87634 -7.35089e-07 4.99936C-7.40467e-07 5.12237 0.0285542 5.24397 0.0837457 5.35598C0.138937 5.46798 0.218553 5.56781 0.319056 5.64876Z"
-                                                fill="black" />
-                                        </svg>
-                                        Вернуться к фильтрам
-                                    </button>
-                                    <div class="materials-modal-title">
-                                        Материалы
-                                        <span>0</span>
-                                    </div>
-                                </div>
-                                <div class="filter-modal__inner">
-                                    <input type="text" placeholder="Найти материал" class="filter-modal__search">
-                                    <div class="filter-modal__materials">
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox" data-checked-id="1">
-                                            <div class="filter-square"></div>
-                                            Дуб
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Алькантара
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Ониксовый черный
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Желто-голубоватенький
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Оникс
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Береза
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Сирень
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Береза
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Оникс
-                                        </label>
-                                        <label class="filter-modal__item">
-                                            <input type="checkbox">
-                                            <div class="filter-square"></div>
-                                            Сирень
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button type="button" onclick="toggleFilter()" class="main-filter__closeBtn"></button>
-                    </form>
-                    <button onclick="toggleFilter()" class="main-filter__btn">
-                        <span>
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0.5 0.5C0.5 0.367392 0.552678 0.240215 0.646447 0.146447C0.740215 0.0526784 0.867392 0 1 0H13C13.1326 0 13.2598 0.0526784 13.3536 0.146447C13.4473 0.240215 13.5 0.367392 13.5 0.5V2.5C13.5 2.62331 13.4544 2.74226 13.372 2.834L9 7.692V12.5C8.99992 12.6049 8.96685 12.7071 8.90547 12.7922C8.8441 12.8772 8.75752 12.9409 8.658 12.974L5.658 13.974C5.58287 13.999 5.50288 14.0058 5.4246 13.9939C5.34632 13.982 5.272 13.9516 5.20775 13.9053C5.1435 13.859 5.09116 13.7982 5.05504 13.7277C5.01893 13.6572 5.00006 13.5792 5 13.5V7.692L0.628 2.834C0.545608 2.74226 0.500022 2.62331 0.5 2.5V0.5ZM1.5 1V2.308L5.872 7.166C5.95439 7.25774 5.99998 7.37669 6 7.5V12.806L8 12.14V7.5C8.00002 7.37669 8.04561 7.25774 8.128 7.166L12.5 2.308V1H1.5Z"
-                                    fill="black" />
-                            </svg>
-                            <span>1</span>
-                        </span>
-                        Фильтрация
-                    </button>
-                </div>
-                <div class="main-sort">
-                    <div class="sort">
-                        <span>Сортировать:</span> <span class="sort-item">По цене</span>
-                        <span class="sort-vec">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div class="found">
-                        Найдено : <span>135</span>
-                    </div>
-                </div>
-                <section class="main-catalog">
-                    <a href="#" class="main-catalog__item">
-                        <button class="like">
+                <nav class="header-nav">
+                    <a href="#" class="header-nav__link">Блог</a>
+                    <a href="#" class="header-nav__link">О нас</a>
+                    <a href="#" class="header-nav__link">Контакты</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <form class="header-form">
+                    <button type="button" onclick="headerSearchButton()" class="header-form__btn">
+                        <label for="search-input">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M8 3.13884C11.8834 -0.814879 21.5926 6.1037 8 15C-5.59262 6.10456 4.11664 -0.814879 8 3.13884Z"
-                                    fill="inherit" />
+                                    d="M6.5 12C7.22227 12 7.93747 11.8577 8.60476 11.5813C9.27205 11.3049 9.87837 10.8998 10.3891 10.3891C10.8998 9.87837 11.3049 9.27205 11.5813 8.60476C11.8577 7.93747 12 7.22227 12 6.5C12 5.77773 11.8577 5.06253 11.5813 4.39524C11.3049 3.72795 10.8998 3.12163 10.3891 2.61091C9.87837 2.10019 9.27205 1.69506 8.60476 1.41866C7.93747 1.14226 7.22227 1 6.5 1C5.04131 1 3.64236 1.57946 2.61091 2.61091C1.57946 3.64236 1 5.04131 1 6.5C1 7.95869 1.57946 9.35764 2.61091 10.3891C3.64236 11.4205 5.04131 12 6.5 12V12ZM13 6.5C13 8.22391 12.3152 9.87721 11.0962 11.0962C9.87721 12.3152 8.22391 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.684819 9.87721 0 8.22391 0 6.5C0 4.77609 0.684819 3.12279 1.90381 1.90381C3.12279 0.684819 4.77609 0 6.5 0C8.22391 0 9.87721 0.684819 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5V6.5Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.344 11.742C10.374 11.782 10.406 11.82 10.442 11.857L14.292 15.707C14.4795 15.8947 14.7339 16.0001 14.9991 16.0002C15.2644 16.0003 15.5189 15.895 15.7065 15.7075C15.8941 15.52 15.9996 15.2656 15.9997 15.0004C15.9998 14.7351 15.8945 14.4807 15.707 14.293L11.857 10.443C11.8212 10.4068 11.7828 10.3734 11.742 10.343C11.3497 10.8779 10.8783 11.35 10.344 11.743V11.742Z"
+                                    fill="black" />
                             </svg>
-                        </button>
-                        <img src='img/catalog/lustr-1.jpg' alt="">
-                        <p class="description">Люстра подвесная Citilux CL407134 Базель</p>
-                        <span class="price">9 988 354 ₽</span>
-                        <div class="buy-btn">
-                            <button onclick="console.log('asads')" class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="main-catalog__item">
-                        <button class="like isFavourite">
-                            <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
-                            </svg>
-                        </button>
-                        <img src='img/catalog/lustr-2.jpg' alt="">
-                        <p class="description">Ваза «Собор Василия Блаженного»</p>
-                        <span class="price">1 988 354 ₽</span>
-                        <div class="buy-btn">
-                            <button class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="main-catalog__item">
-                        <button class="like isFavourite">
-                            <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
-                            </svg>
-                        </button>
-                        <img src='img/catalog/lustr-3.jpg' alt="">
-                        <p class="description">Ваза «Собор Василия Блаженного»</p>
-                        <span class="price">На заказ</span>
-                        <div class="buy-btn">
-                            <button class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="main-catalog__item">
-                        <button class="like isFavourite">
-                            <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
-                            </svg>
-                        </button>
-                        <img src='img/catalog/lustr-4.jpg' alt="">
-                        <p class="description">Люстра подвесная Citilux CL407134 Базель...</p>
-                        <span class="price">9 988 354 ₽</span>
-                        <div class="buy-btn">
-                            <button class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="main-catalog__item">
-                        <button class="like isFavourite">
-                            <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
-                            </svg>
-                        </button>
-                        <img src='img/catalog/lustr-5.jpg' alt="">
-                        <p class="description">Люстра подвесная Citilux CL407134 Базель</p>
-                        <span class="price">9 988 354 ₽</span>
-                        <div class="buy-btn">
-                            <button class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="main-catalog__item">
-                        <button class="like isFavourite">
-                            <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
-                            </svg>
-                        </button>
-                        <img src='img/catalog/lustr-6.jpg' alt="">
-                        <p class="description">Ваза «Собор Василия Блаженного»</p>
-                        <span class="price">1 988 354 ₽</span>
-                        <div class="buy-btn">
-                            <button class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="main-catalog__item">
-                        <button class="like isFavourite">
-                            <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
-                            </svg>
-                        </button>
-                        <img src='img/catalog/lustr-7.jpg' alt="">
-                        <p class="description">Ваза «Собор Василия Блаженного»</p>
-                        <span class="price">9 988 354 ₽</span>
-                        <div class="buy-btn">
-                            <button class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                    <a href="#" class="main-catalog__item">
-                        <button class="like isFavourite">
-                            <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
-                            </svg>
-                        </button>
-                        <img src='img/catalog/lustr-8.jpg' alt="">
-                        <p class="description">Люстра подвесная Citilux CL407134 Базель...</p>
-                        <span class="price">9 988 354 ₽</span>
-                        <div class="buy-btn">
-                            <button class="for-basket">В корзину</button>
-                            <button class="order">Быстрый заказ</button>
-                        </div>
-                    </a>
-                </section>
-                <button class="load-btn" onclick="loadmore()">
-                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </label>
+                    </button>
+                    <input id="search-input" onfocus="formToggle()" onblur="formToggle()" class="header-form__input"
+                        type="text" placeholder="Поиск по названию">
+                </form>
+                <a class="header-favorites" href="#">
+                    <span class="data-new">1</span>
+                    <svg width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
                         <path
-                            d="M7.00002 4.96591L7.00002 1.03391C7.00004 0.986411 7.01359 0.939896 7.03909 0.899816C7.06459 0.859735 7.10098 0.82775 7.144 0.807604C7.18702 0.787457 7.23489 0.779984 7.282 0.786061C7.32912 0.792138 7.37352 0.811512 7.41002 0.841914L9.77002 2.80791C9.79816 2.83138 9.82079 2.86074 9.83633 2.89391C9.85186 2.92709 9.85991 2.96328 9.85991 2.99991C9.85991 3.03655 9.85186 3.07274 9.83633 3.10591C9.82079 3.13909 9.79816 3.16845 9.77002 3.19191L7.41002 5.15791C7.37352 5.18832 7.32912 5.20769 7.282 5.21377C7.23489 5.21984 7.18702 5.21237 7.144 5.19222C7.10098 5.17208 7.06459 5.14009 7.03909 5.10001C7.01359 5.05993 7.00004 5.01342 7.00002 4.96591ZM9.00002 15.9659L9.00002 12.0339C9.00001 11.9864 8.98645 11.9399 8.96096 11.8998C8.93546 11.8597 8.89907 11.8277 8.85605 11.8076C8.81303 11.7875 8.76516 11.78 8.71804 11.7861C8.67093 11.7921 8.62652 11.8115 8.59002 11.8419L6.23002 13.8079C6.20189 13.8314 6.17925 13.8607 6.16372 13.8939C6.14819 13.9271 6.14014 13.9633 6.14014 13.9999C6.14014 14.0365 6.14819 14.0727 6.16372 14.1059C6.17925 14.1391 6.20189 14.1685 6.23002 14.1919L8.59002 16.1579C8.62652 16.1883 8.67093 16.2077 8.71804 16.2138C8.76516 16.2198 8.81303 16.2124 8.85605 16.1922C8.89907 16.1721 8.93546 16.1401 8.96096 16.1C8.98645 16.0599 9.00001 16.0134 9.00002 15.9659Z"
-                            fill="#282828" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.99999 8.49999C2.99999 10.052 3.70699 11.44 4.81799 12.357C4.87106 12.3979 4.91536 12.4491 4.94825 12.5076C4.98114 12.566 5.00194 12.6304 5.00943 12.697C5.01692 12.7636 5.01094 12.8311 4.99184 12.8953C4.97275 12.9596 4.94092 13.0193 4.89827 13.071C4.85561 13.1227 4.803 13.1653 4.74354 13.1963C4.68409 13.2273 4.61902 13.246 4.5522 13.2513C4.48538 13.2566 4.41817 13.2484 4.35457 13.2272C4.29097 13.2061 4.23228 13.1723 4.18199 13.128C3.29552 12.3958 2.638 11.4244 2.28764 10.3293C1.93729 9.23425 1.90884 8.06159 2.20568 6.95082C2.50252 5.84004 3.11215 4.8379 3.96207 4.06358C4.812 3.28926 5.86644 2.77536 6.99999 2.58299L6.99999 3.59999C5.8708 3.83087 4.85598 4.44462 4.12713 5.33746C3.39829 6.2303 3.00013 7.34744 2.99999 8.49999ZM8.99999 13.4C9.92461 13.2107 10.7768 12.7636 11.4581 12.1105C12.1394 11.4574 12.6221 10.6248 12.8503 9.70903C13.0785 8.79323 13.0429 7.83155 12.7477 6.9351C12.4525 6.03865 11.9097 5.24401 11.182 4.64299C11.1289 4.60204 11.0846 4.55084 11.0517 4.49243C11.0188 4.43402 10.998 4.3696 10.9905 4.30298C10.9831 4.23637 10.989 4.16893 11.0081 4.10467C11.0272 4.04042 11.0591 3.98066 11.1017 3.92895C11.1444 3.87724 11.197 3.83463 11.2564 3.80367C11.3159 3.7727 11.381 3.75401 11.4478 3.74869C11.5146 3.74338 11.5818 3.75156 11.6454 3.77274C11.709 3.79392 11.7677 3.82767 11.818 3.87199C12.7045 4.60418 13.362 5.57558 13.7123 6.67066C14.0627 7.76573 14.0911 8.93839 13.7943 10.0492C13.4975 11.1599 12.8878 12.1621 12.0379 12.9364C11.188 13.7107 10.1335 14.2246 8.99999 14.417L8.99999 13.4Z"
-                            fill="#282828" />
+                            d="M8.7666 2.14304C4.25488 -2.03994 -6.27941 5.86803 8.94131 16C24.162 5.86703 13.6268 -2.04194 9.11602 2.14404C9.0556 2.19839 8.99732 2.2551 8.94131 2.31404C8.88473 2.25504 8.82616 2.19804 8.7666 2.14304Z" />
                     </svg>
-                    Загрузить еще
-                </button>
-                <div class="free swiper">
-                    <div class="free-top">
-                        <h2 class="free-top__title">Блог</h2>
-                        <a class="free-top__link" href="#">Страница блога</a>
-                    </div>
-                    <hr>
-                    <div class="blog swiper-wrapper">
-                        <a href="#" class="blog-item swiper-slide">
-                            <img src="img/blog/blog-1.jpg" alt="Желтное кресло — акцент или аутизм?"
-                                class="blog-item__img">
-                            <span class="blog-item__group">История</span>
-                            <h3 class="blog-item__title">Желтное кресло — акцент или аутизм?</h3>
-                            <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
-                        </a>
-                        <a href="#" class="blog-item swiper-slide">
-                            <img class="blog-item__img" src="img/blog/blog-2.jpg"
-                                alt="Желтное кресло — акцент или аутизм?" class="blog-item__img">
-                            <span class="blog-item__group">Реставрация</span>
-                            <h3 class="blog-item__title">Этот стул выглядит неплохо</h3>
-                            <p class="blog-item__desc">Если в заголовке одна строка до подзаголовок может иметь три
-                                строки и наоборот.</p>
-                        </a>
-                        <a href="#" class="blog-item swiper-slide">
-                            <img src="img/blog/blog-3.jpg" alt="Желтное кресло — акцент или аутизм?"
-                                class="blog-item__img">
-                            <span class="blog-item__group">История</span>
-                            <h3 class="blog-item__title">Советская мебель в соверменном интерьере</h3>
-                            <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
-                        </a>
-                        <a href="#" class="blog-item swiper-slide">
-                            <img src="img/blog/blog-4.jpg" alt="Желтное кресло — акцент или аутизм?"
-                                class="blog-item__img">
-                            <span class="blog-item__group">Интерьеры</span>
-                            <h3 class="blog-item__title">Невероятная стена оранжевого цвета.</h3>
-                            <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
-                        </a>
-                    </div>
-                </div>
-            </main>
-            <footer class="footer">
-                <button class="to-up" onclick="toUp()">
-                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </a>
+                <a href="#" class="header-basket">
+                    <span class="data-new">15</span>
+                    <span class="header-basket__title">Корзина</span>
+                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
-                            d="M25 12.5C25 9.18479 23.683 6.00537 21.3388 3.66117C18.9946 1.31696 15.8152 0 12.5 0C9.18479 0 6.00537 1.31696 3.66117 3.66117C1.31696 6.00537 0 9.18479 0 12.5C0 15.8152 1.31696 18.9946 3.66117 21.3388C6.00537 23.683 9.18479 25 12.5 25C15.8152 25 18.9946 23.683 21.3388 21.3388C23.683 18.9946 25 15.8152 25 12.5ZM13.2813 17.9688C13.2813 18.176 13.1989 18.3747 13.0524 18.5212C12.9059 18.6677 12.7072 18.75 12.5 18.75C12.2928 18.75 12.0941 18.6677 11.9476 18.5212C11.8011 18.3747 11.7188 18.176 11.7188 17.9688L11.7188 8.91719L8.36563 12.2719C8.21893 12.4186 8.01996 12.501 7.8125 12.501C7.60504 12.501 7.40607 12.4186 7.25937 12.2719C7.11268 12.1252 7.03026 11.9262 7.03026 11.7188C7.03026 11.5113 7.11268 11.3123 7.25937 11.1656L11.9469 6.47812C12.0194 6.40537 12.1057 6.34765 12.2006 6.30826C12.2955 6.26888 12.3972 6.2486 12.5 6.2486C12.6028 6.2486 12.7045 6.26888 12.7994 6.30826C12.8943 6.34765 12.9806 6.40537 13.0531 6.47812L17.7406 11.1656C17.8873 11.3123 17.9697 11.5113 17.9697 11.7187C17.9697 11.9262 17.8873 12.1252 17.7406 12.2719C17.5939 12.4186 17.395 12.501 17.1875 12.501C16.98 12.501 16.7811 12.4186 16.6344 12.2719L13.2812 8.91719L13.2813 17.9688Z" />
+                            d="M-0.000610352 1.125C-0.000610352 0.95924 0.0652377 0.800269 0.182448 0.683058C0.299658 0.565848 0.458629 0.5 0.62439 0.5H2.49939C2.6388 0.500039 2.7742 0.546688 2.88405 0.632531C2.9939 0.718374 3.0719 0.83848 3.10564 0.97375L3.61189 3H18.1244C18.2193 3.00003 18.313 3.02168 18.3983 3.06332C18.4836 3.10495 18.5584 3.16548 18.6168 3.2403C18.6752 3.31512 18.7158 3.40227 18.7356 3.49513C18.7553 3.588 18.7536 3.68414 18.7306 3.77625L16.8556 11.2763C16.8219 11.4115 16.7439 11.5316 16.6341 11.6175C16.5242 11.7033 16.3888 11.75 16.2494 11.75H4.99939C4.85998 11.75 4.72458 11.7033 4.61473 11.6175C4.50487 11.5316 4.42688 11.4115 4.39314 11.2763L2.01189 1.75H0.62439C0.458629 1.75 0.299658 1.68415 0.182448 1.56694C0.0652377 1.44973 -0.000610352 1.29076 -0.000610352 1.125ZM3.92439 4.25L4.54939 6.75H6.24939V4.25H3.92439ZM7.49939 4.25V6.75H9.99939V4.25H7.49939ZM11.2494 4.25V6.75H13.7494V4.25H11.2494ZM14.9994 4.25V6.75H16.6994L17.3244 4.25H14.9994ZM16.3869 8H14.9994V10.5H15.7619L16.3869 8ZM13.7494 8H11.2494V10.5H13.7494V8ZM9.99939 8H7.49939V10.5H9.99939V8ZM6.24939 8H4.86189L5.48689 10.5H6.24939V8ZM6.24939 14.25C5.91787 14.25 5.59993 14.3817 5.36551 14.6161C5.13109 14.8505 4.99939 15.1685 4.99939 15.5C4.99939 15.8315 5.13109 16.1495 5.36551 16.3839C5.59993 16.6183 5.91787 16.75 6.24939 16.75C6.58091 16.75 6.89885 16.6183 7.13327 16.3839C7.36769 16.1495 7.49939 15.8315 7.49939 15.5C7.49939 15.1685 7.36769 14.8505 7.13327 14.6161C6.89885 14.3817 6.58091 14.25 6.24939 14.25ZM3.74939 15.5C3.74939 14.837 4.01278 14.2011 4.48162 13.7322C4.95046 13.2634 5.58635 13 6.24939 13C6.91243 13 7.54832 13.2634 8.01716 13.7322C8.486 14.2011 8.74939 14.837 8.74939 15.5C8.74939 16.163 8.486 16.7989 8.01716 17.2678C7.54832 17.7366 6.91243 18 6.24939 18C5.58635 18 4.95046 17.7366 4.48162 17.2678C4.01278 16.7989 3.74939 16.163 3.74939 15.5ZM14.9994 14.25C14.6679 14.25 14.3499 14.3817 14.1155 14.6161C13.8811 14.8505 13.7494 15.1685 13.7494 15.5C13.7494 15.8315 13.8811 16.1495 14.1155 16.3839C14.3499 16.6183 14.6679 16.75 14.9994 16.75C15.3309 16.75 15.6489 16.6183 15.8833 16.3839C16.1177 16.1495 16.2494 15.8315 16.2494 15.5C16.2494 15.1685 16.1177 14.8505 15.8833 14.6161C15.6489 14.3817 15.3309 14.25 14.9994 14.25ZM12.4994 15.5C12.4994 14.837 12.7628 14.2011 13.2316 13.7322C13.7005 13.2634 14.3363 13 14.9994 13C15.6624 13 16.2983 13.2634 16.7672 13.7322C17.236 14.2011 17.4994 14.837 17.4994 15.5C17.4994 16.163 17.236 16.7989 16.7672 17.2678C16.2983 17.7366 15.6624 18 14.9994 18C14.3363 18 13.7005 17.7366 13.2316 17.2678C12.7628 16.7989 12.4994 16.163 12.4994 15.5Z"
+                            fill="black" />
                     </svg>
+                </a>
+            </div>
+            <button class="header-btn" onclick="headerToggle()">
+                <span></span>
+            </button>
+            <div class="header-form__popap">
+                <button class="popap-closeBtn" onclick="closeSearchButton()">
+                    <span></span>
                 </button>
-                <nav class="footer-crumbs">
-                    <a href="#" class="footer-crumbs__link">Главная</a> /
-                    <a href="#" class="footer-crumbs__link">Категории</a> /
-                    <a href="#" class="footer-crumbs__link">Люстры</a>
-                </nav>
-                <div class="footer-content">
-                    <div class="footer-content__item">
-                        <div class="footer-list__title">
-                            <b>Категории</b>
-                            <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                <div class="popap-title">Поиск</div>
+                <input type="text" />
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-top">
+                <div class="main-title">Люстры</div>
+                <form class="main-filter">
+                    <div class="main-filter__btns">
+                        <button type="reset" id="filter-reset" disabled>Сбросить</button>
+                        <button type="button" id="filter-accept" disabled>Принять</button>
+                    </div>
+                    <h2 class="main-filter__title">Фильтрация</h2>
+                    <div class="main-filter__item">
+                        <button class="btn" type="button">
+                            <span>Цена</span>
+                            <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                             </svg>
+                        </button>
+                        <div class="filter-modal price">
+                            <div class="filter-modal__checked">
+                                <div class="filter-modal__boost" data-check-id="1">
+                                    от 20 000 ₽ до 40 000 ₽
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="filter-modal__inner">
+                                <label class="filter-modal__item"><input type="checkbox" name="price[]" value="0" />
+                                    <div class="filter-square"></div><span>до 20 000 ₽</span>
+                                </label>
+                                <label class="filter-modal__item"><input type="checkbox" name="price[]" value="1" />
+                                    <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
+                                    000 ₽
+                                </label>
+                                <label class="filter-modal__item"><input type="checkbox" name="price[]" value="2" />
+                                    <div class="filter-square"></div><span>от 20 000 ₽ до 40</span>
+                                    000 ₽
+                                </label>
+                                <label class="filter-modal__item"><input type="checkbox" name="price[]" value="3" />
+                                    <div class="filter-square"></div><span>от 40 000 ₽ до 70</span>
+                                    000 ₽
+                                </label>
+                                <label class="filter-modal__item"><input type="checkbox" name="price[]" value="4" />
+                                    <div class="filter-square"></div><span>от 70 000 ₽ до 90</span>
+                                    000 ₽
+                                </label>
+                                <label class="filter-modal__item"><input type="checkbox" name="price[]" value="5" />
+                                    <div class="filter-square"></div><span>от 90 000 ₽</span>
+                                </label>
+                            </div>
                         </div>
-                        <ul class="footer-list">
-                            <li class="footer-list__item"><a href="#">Кашпо</a></li>
-                            <li class="footer-list__item"><a href="#">Лингравюры</a></li>
-                            <li class="footer-list__item"><a href="#">Люстры</a></li>
-                            <li class="footer-list__item"><a href="#">Торшеры</a></li>
-                        </ul>
                     </div>
-                    <div class="footer-content__item">
-                        <div class="footer-list__title">
-                            <b>Блок</b>
-                            <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                    <div class="main-filter__item">
+                        <button class="btn" type="button">
+                            <span>Размеры</span>
+                            <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                             </svg>
+                        </button>
+                        <div class="filter-modal">
+                            <div class="filter-modal__inner"></div>
                         </div>
-                        <ul class="footer-list">
-                            <li class="footer-list__item"><a href="#">Художники</a></li>
-                            <li class="footer-list__item"><a href="#">Реставрация</a></li>
-                            <li class="footer-list__item"><a href="#">Полезное</a></li>
-                        </ul>
                     </div>
-                    <div class="footer-content__item">
-                        <div class="footer-list__title">
-                            <b>Оставайтесь на связи</b>
-                            <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                    <div class="main-filter__item">
+                        <button class="btn" type="button">
+                            <span>Год произведения</span>
+                            <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
                             </svg>
+                        </button>
+                        <div class="filter-modal productionyear">
+                            <div class="filter-modal__inner">
+                                <input type="hidden" value="1930" id="filter-number-1">
+                                <input type="hidden" value="2022" id="filter-number-2">
+                                <div class="count">
+                                    <number>1930</number>
+                                    <number>2022</number>
+                                </div>
+                                <div id="productionyear" class="filter-modal__range"></div>
+                            </div>
                         </div>
-                        <ul class="footer-list">
-                            <li class="footer-list__item"><a href="#">Vkontakte</a></li>
-                        </ul>
                     </div>
-                    <div class="footer-content__item">
-                        <ul class="footer-list__contact contact">
-                            <li class="footer-list__item tel"><a href="tel:88002355566">8 800 235 - 55 - 66</a></li>
-                            <li class="footer-list__item mail"><a href="mailto:info@trumo.ru">info@trumo.ru</a></li>
-                        </ul>
+                    <div class="main-filter__item">
+                        <button class="btn" type="button">
+                            <span>Стиль</span>
+                            <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
+                            </svg>
+                        </button>
+                        <span class="boost">
+                            <span>2</span>
+                            <span class="cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                        <div class="filter-modal">
+                            <div class="filter-modal__inner"></div>
+                        </div>
                     </div>
+                    <div class="main-filter__item">
+                        <button class="btn" type="button">
+                            <span>Наличие</span>
+                            <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
+                            </svg>
+                        </button>
+                        <div class="filter-modal availability">
+                            <div class="filter-modal__inner">
+                                <label class="filter-modal__item">
+                                    <input type="radio" name="availability">
+                                    <div class="filter-circle"></div>
+                                    В наличии
+                                </label>
+                                <label class="filter-modal__item">
+                                    <input type="radio" name="availability">
+                                    <div class="filter-circle"></div>
+                                    На заказ
+                                </label>
+                                <label class="filter-modal__item">
+                                    <input type="radio" name="availability">
+                                    <div class="filter-circle"></div>
+                                    Еще вариант
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-filter__item">
+                        <button class="btn" type="button">
+                            <span>Кол-во ламп</span>
+                            <svg viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
+                            </svg>
+                        </button>
+                        <div class="filter-modal">
+                            <div class="filter-modal__inner"></div>
+                        </div>
+                    </div>
+                    <div class="main-filter__item">
+                        <button class="btn" type="button">
+                            <span>Материал</span>
+                            <svg viewBox="-1 -16 16 40" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
+                            </svg>
+                        </button>
+                        <div class="filter-modal materials-modal">
+                            <div class="materials-modal-top">
+                                <button type="button" class="materials-modal-back" onclick="toggleMaterials()">
+                                    <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.319056 5.64876L5.4486 9.78495C6.05213 10.2731 7 9.87637 7 9.13555L7 0.863165C7.00015 0.697369 6.94845 0.535045 6.85109 0.395634C6.75373 0.256222 6.61483 0.145633 6.45103 0.0771084C6.28723 0.00858304 6.10547 -0.0149718 5.92751 0.00926395C5.74956 0.0334997 5.58296 0.104499 5.44766 0.213758L0.319992 4.34995C0.219488 4.4309 0.138937 4.53073 0.0837457 4.64274C0.0285542 4.75474 -7.29712e-07 4.87634 -7.35089e-07 4.99936C-7.40467e-07 5.12237 0.0285542 5.24397 0.0837457 5.35598C0.138937 5.46798 0.218553 5.56781 0.319056 5.64876Z"
+                                            fill="black" />
+                                    </svg>
+                                    Вернуться к фильтрам
+                                </button>
+                                <div class="materials-modal-title">
+                                    Материалы
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div class="filter-modal__inner">
+                                <input type="text" placeholder="Найти материал" class="filter-modal__search">
+                                <div class="filter-modal__materials">
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox" data-checked-id="1">
+                                        <div class="filter-square"></div>
+                                        Дуб
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Алькантара
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Ониксовый черный
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Желто-голубоватенький
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Оникс
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Береза
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Сирень
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Береза
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Оникс
+                                    </label>
+                                    <label class="filter-modal__item">
+                                        <input type="checkbox">
+                                        <div class="filter-square"></div>
+                                        Сирень
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" onclick="toggleFilter()" class="main-filter__closeBtn"></button>
+                </form>
+                <button onclick="toggleFilter()" class="main-filter__btn">
+                    <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.5 0.5C0.5 0.367392 0.552678 0.240215 0.646447 0.146447C0.740215 0.0526784 0.867392 0 1 0H13C13.1326 0 13.2598 0.0526784 13.3536 0.146447C13.4473 0.240215 13.5 0.367392 13.5 0.5V2.5C13.5 2.62331 13.4544 2.74226 13.372 2.834L9 7.692V12.5C8.99992 12.6049 8.96685 12.7071 8.90547 12.7922C8.8441 12.8772 8.75752 12.9409 8.658 12.974L5.658 13.974C5.58287 13.999 5.50288 14.0058 5.4246 13.9939C5.34632 13.982 5.272 13.9516 5.20775 13.9053C5.1435 13.859 5.09116 13.7982 5.05504 13.7277C5.01893 13.6572 5.00006 13.5792 5 13.5V7.692L0.628 2.834C0.545608 2.74226 0.500022 2.62331 0.5 2.5V0.5ZM1.5 1V2.308L5.872 7.166C5.95439 7.25774 5.99998 7.37669 6 7.5V12.806L8 12.14V7.5C8.00002 7.37669 8.04561 7.25774 8.128 7.166L12.5 2.308V1H1.5Z"
+                                fill="black" />
+                        </svg>
+                        <span>1</span>
+                    </span>
+                    Фильтрация
+                </button>
+            </div>
+            <div class="main-sort">
+                <div class="sort">
+                    <span>Сортировать:</span> <span class="sort-item">По цене</span>
+                    <span class="sort-vec">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
                 </div>
-            </footer>
-        </div>
-    </section>
+                <div class="found">
+                    Найдено : <span>135</span>
+                </div>
+            </div>
+            <section class="main-catalog">
+                <a href="#" class="main-catalog__item">
+                    <button class="like">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 3.13884C11.8834 -0.814879 21.5926 6.1037 8 15C-5.59262 6.10456 4.11664 -0.814879 8 3.13884Z"
+                                fill="inherit" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-1.jpg' alt="">
+                    <p class="description">Люстра подвесная Citilux CL407134 Базель</p>
+                    <span class="price">9 988 354 ₽</span>
+                    <div class="buy-btn">
+                        <button onclick="console.log('asads')" class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+                <a href="#" class="main-catalog__item">
+                    <button class="like isFavourite">
+                        <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-2.jpg' alt="">
+                    <p class="description">Ваза «Собор Василия Блаженного»</p>
+                    <span class="price">1 988 354 ₽</span>
+                    <div class="buy-btn">
+                        <button class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+                <a href="#" class="main-catalog__item">
+                    <button class="like isFavourite">
+                        <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-3.jpg' alt="">
+                    <p class="description">Ваза «Собор Василия Блаженного»</p>
+                    <span class="price">На заказ</span>
+                    <div class="buy-btn">
+                        <button class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+                <a href="#" class="main-catalog__item">
+                    <button class="like isFavourite">
+                        <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-4.jpg' alt="">
+                    <p class="description">Люстра подвесная Citilux CL407134 Базель...</p>
+                    <span class="price">9 988 354 ₽</span>
+                    <div class="buy-btn">
+                        <button class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+                <a href="#" class="main-catalog__item">
+                    <button class="like isFavourite">
+                        <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-5.jpg' alt="">
+                    <p class="description">Люстра подвесная Citilux CL407134 Базель</p>
+                    <span class="price">9 988 354 ₽</span>
+                    <div class="buy-btn">
+                        <button class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+                <a href="#" class="main-catalog__item">
+                    <button class="like isFavourite">
+                        <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-6.jpg' alt="">
+                    <p class="description">Ваза «Собор Василия Блаженного»</p>
+                    <span class="price">1 988 354 ₽</span>
+                    <div class="buy-btn">
+                        <button class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+                <a href="#" class="main-catalog__item">
+                    <button class="like isFavourite">
+                        <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-7.jpg' alt="">
+                    <p class="description">Ваза «Собор Василия Блаженного»</p>
+                    <span class="price">9 988 354 ₽</span>
+                    <div class="buy-btn">
+                        <button class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+                <a href="#" class="main-catalog__item">
+                    <button class="like isFavourite">
+                        <svg width="14" height="14" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 1.13884C10.8834 -2.81488 20.5926 4.1037 7 13C-6.59262 4.10456 3.11664 -2.81488 7 1.13884Z" />
+                        </svg>
+                    </button>
+                    <img src='img/catalog/lustr-8.jpg' alt="">
+                    <p class="description">Люстра подвесная Citilux CL407134 Базель...</p>
+                    <span class="price">9 988 354 ₽</span>
+                    <div class="buy-btn">
+                        <button class="for-basket">В корзину</button>
+                        <button class="order">Быстрый заказ</button>
+                    </div>
+                </a>
+            </section>
+            <button class="load-btn" onclick="loadmore()">
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.00002 4.96591L7.00002 1.03391C7.00004 0.986411 7.01359 0.939896 7.03909 0.899816C7.06459 0.859735 7.10098 0.82775 7.144 0.807604C7.18702 0.787457 7.23489 0.779984 7.282 0.786061C7.32912 0.792138 7.37352 0.811512 7.41002 0.841914L9.77002 2.80791C9.79816 2.83138 9.82079 2.86074 9.83633 2.89391C9.85186 2.92709 9.85991 2.96328 9.85991 2.99991C9.85991 3.03655 9.85186 3.07274 9.83633 3.10591C9.82079 3.13909 9.79816 3.16845 9.77002 3.19191L7.41002 5.15791C7.37352 5.18832 7.32912 5.20769 7.282 5.21377C7.23489 5.21984 7.18702 5.21237 7.144 5.19222C7.10098 5.17208 7.06459 5.14009 7.03909 5.10001C7.01359 5.05993 7.00004 5.01342 7.00002 4.96591ZM9.00002 15.9659L9.00002 12.0339C9.00001 11.9864 8.98645 11.9399 8.96096 11.8998C8.93546 11.8597 8.89907 11.8277 8.85605 11.8076C8.81303 11.7875 8.76516 11.78 8.71804 11.7861C8.67093 11.7921 8.62652 11.8115 8.59002 11.8419L6.23002 13.8079C6.20189 13.8314 6.17925 13.8607 6.16372 13.8939C6.14819 13.9271 6.14014 13.9633 6.14014 13.9999C6.14014 14.0365 6.14819 14.0727 6.16372 14.1059C6.17925 14.1391 6.20189 14.1685 6.23002 14.1919L8.59002 16.1579C8.62652 16.1883 8.67093 16.2077 8.71804 16.2138C8.76516 16.2198 8.81303 16.2124 8.85605 16.1922C8.89907 16.1721 8.93546 16.1401 8.96096 16.1C8.98645 16.0599 9.00001 16.0134 9.00002 15.9659Z"
+                        fill="#282828" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M2.99999 8.49999C2.99999 10.052 3.70699 11.44 4.81799 12.357C4.87106 12.3979 4.91536 12.4491 4.94825 12.5076C4.98114 12.566 5.00194 12.6304 5.00943 12.697C5.01692 12.7636 5.01094 12.8311 4.99184 12.8953C4.97275 12.9596 4.94092 13.0193 4.89827 13.071C4.85561 13.1227 4.803 13.1653 4.74354 13.1963C4.68409 13.2273 4.61902 13.246 4.5522 13.2513C4.48538 13.2566 4.41817 13.2484 4.35457 13.2272C4.29097 13.2061 4.23228 13.1723 4.18199 13.128C3.29552 12.3958 2.638 11.4244 2.28764 10.3293C1.93729 9.23425 1.90884 8.06159 2.20568 6.95082C2.50252 5.84004 3.11215 4.8379 3.96207 4.06358C4.812 3.28926 5.86644 2.77536 6.99999 2.58299L6.99999 3.59999C5.8708 3.83087 4.85598 4.44462 4.12713 5.33746C3.39829 6.2303 3.00013 7.34744 2.99999 8.49999ZM8.99999 13.4C9.92461 13.2107 10.7768 12.7636 11.4581 12.1105C12.1394 11.4574 12.6221 10.6248 12.8503 9.70903C13.0785 8.79323 13.0429 7.83155 12.7477 6.9351C12.4525 6.03865 11.9097 5.24401 11.182 4.64299C11.1289 4.60204 11.0846 4.55084 11.0517 4.49243C11.0188 4.43402 10.998 4.3696 10.9905 4.30298C10.9831 4.23637 10.989 4.16893 11.0081 4.10467C11.0272 4.04042 11.0591 3.98066 11.1017 3.92895C11.1444 3.87724 11.197 3.83463 11.2564 3.80367C11.3159 3.7727 11.381 3.75401 11.4478 3.74869C11.5146 3.74338 11.5818 3.75156 11.6454 3.77274C11.709 3.79392 11.7677 3.82767 11.818 3.87199C12.7045 4.60418 13.362 5.57558 13.7123 6.67066C14.0627 7.76573 14.0911 8.93839 13.7943 10.0492C13.4975 11.1599 12.8878 12.1621 12.0379 12.9364C11.188 13.7107 10.1335 14.2246 8.99999 14.417L8.99999 13.4Z"
+                        fill="#282828" />
+                </svg>
+                Загрузить еще
+            </button>
+            <div class="free swiper">
+                <div class="free-top">
+                    <h2 class="free-top__title">Блог</h2>
+                    <a class="free-top__link" href="#">Страница блога</a>
+                </div>
+                <hr>
+                <div class="blog swiper-wrapper">
+                    <a href="#" class="blog-item swiper-slide">
+                        <img src="img/blog/blog-1.jpg" alt="Желтное кресло — акцент или аутизм?"
+                            class="blog-item__img">
+                        <span class="blog-item__group">История</span>
+                        <h3 class="blog-item__title">Желтное кресло — акцент или аутизм?</h3>
+                        <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
+                    </a>
+                    <a href="#" class="blog-item swiper-slide">
+                        <img class="blog-item__img" src="img/blog/blog-2.jpg"
+                            alt="Желтное кресло — акцент или аутизм?" class="blog-item__img">
+                        <span class="blog-item__group">Реставрация</span>
+                        <h3 class="blog-item__title">Этот стул выглядит неплохо</h3>
+                        <p class="blog-item__desc">Если в заголовке одна строка до подзаголовок может иметь три
+                            строки и наоборот.</p>
+                    </a>
+                    <a href="#" class="blog-item swiper-slide">
+                        <img src="img/blog/blog-3.jpg" alt="Желтное кресло — акцент или аутизм?"
+                            class="blog-item__img">
+                        <span class="blog-item__group">История</span>
+                        <h3 class="blog-item__title">Советская мебель в соверменном интерьере</h3>
+                        <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
+                    </a>
+                    <a href="#" class="blog-item swiper-slide">
+                        <img src="img/blog/blog-4.jpg" alt="Желтное кресло — акцент или аутизм?"
+                            class="blog-item__img">
+                        <span class="blog-item__group">Интерьеры</span>
+                        <h3 class="blog-item__title">Невероятная стена оранжевого цвета.</h3>
+                        <p class="blog-item__desc">Переделка старой мебели — все лайфхаки по преображению...</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <button class="to-up" onclick="toUp()">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M25 12.5C25 9.18479 23.683 6.00537 21.3388 3.66117C18.9946 1.31696 15.8152 0 12.5 0C9.18479 0 6.00537 1.31696 3.66117 3.66117C1.31696 6.00537 0 9.18479 0 12.5C0 15.8152 1.31696 18.9946 3.66117 21.3388C6.00537 23.683 9.18479 25 12.5 25C15.8152 25 18.9946 23.683 21.3388 21.3388C23.683 18.9946 25 15.8152 25 12.5ZM13.2813 17.9688C13.2813 18.176 13.1989 18.3747 13.0524 18.5212C12.9059 18.6677 12.7072 18.75 12.5 18.75C12.2928 18.75 12.0941 18.6677 11.9476 18.5212C11.8011 18.3747 11.7188 18.176 11.7188 17.9688L11.7188 8.91719L8.36563 12.2719C8.21893 12.4186 8.01996 12.501 7.8125 12.501C7.60504 12.501 7.40607 12.4186 7.25937 12.2719C7.11268 12.1252 7.03026 11.9262 7.03026 11.7188C7.03026 11.5113 7.11268 11.3123 7.25937 11.1656L11.9469 6.47812C12.0194 6.40537 12.1057 6.34765 12.2006 6.30826C12.2955 6.26888 12.3972 6.2486 12.5 6.2486C12.6028 6.2486 12.7045 6.26888 12.7994 6.30826C12.8943 6.34765 12.9806 6.40537 13.0531 6.47812L17.7406 11.1656C17.8873 11.3123 17.9697 11.5113 17.9697 11.7187C17.9697 11.9262 17.8873 12.1252 17.7406 12.2719C17.5939 12.4186 17.395 12.501 17.1875 12.501C16.98 12.501 16.7811 12.4186 16.6344 12.2719L13.2812 8.91719L13.2813 17.9688Z" />
+                </svg>
+            </button>
+            <nav class="footer-crumbs">
+                <a href="#" class="footer-crumbs__link">Главная</a> /
+                <a href="#" class="footer-crumbs__link">Категории</a> /
+                <a href="#" class="footer-crumbs__link">Люстры</a>
+            </nav>
+            <div class="footer-content">
+                <div class="footer-content__item">
+                    <div class="footer-list__title">
+                        <b>Категории</b>
+                        <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
+                        </svg>
+                    </div>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="#">Кашпо</a></li>
+                        <li class="footer-list__item"><a href="#">Лингравюры</a></li>
+                        <li class="footer-list__item"><a href="#">Люстры</a></li>
+                        <li class="footer-list__item"><a href="#">Торшеры</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content__item">
+                    <div class="footer-list__title">
+                        <b>Блок</b>
+                        <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
+                        </svg>
+                    </div>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="#">Художники</a></li>
+                        <li class="footer-list__item"><a href="#">Реставрация</a></li>
+                        <li class="footer-list__item"><a href="#">Полезное</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content__item">
+                    <div class="footer-list__title">
+                        <b>Оставайтесь на связи</b>
+                        <svg width="14" height="9" viewBox="0 0 14 9" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.09173 8.58978L0.301065 1.99466C-0.382321 1.21869 0.173081 4.42369e-07 1.21023 4.42369e-07L12.7916 4.42369e-07C13.0237 -0.000197853 13.2509 0.0662735 13.4461 0.191455C13.6413 0.316636 13.7961 0.49522 13.892 0.705822C13.988 0.916423 14.021 1.15011 13.987 1.37891C13.9531 1.60771 13.8537 1.82191 13.7007 1.99586L7.91007 8.58858C7.79674 8.7178 7.65698 8.82137 7.50017 8.89233C7.34336 8.96329 7.17313 9 7.0009 9C6.82868 9 6.65844 8.96329 6.50163 8.89233C6.34482 8.82137 6.20506 8.719 6.09173 8.58978Z" />
+                        </svg>
+                    </div>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="#">Vkontakte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-content__item">
+                    <ul class="footer-list__contact contact">
+                        <li class="footer-list__item tel"><a href="tel:88002355566">8 800 235 - 55 - 66</a></li>
+                        <li class="footer-list__item mail"><a href="mailto:info@trumo.ru">info@trumo.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

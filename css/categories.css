@@ -1042,8 +1042,6 @@ body.no-scroll {
   .main-title {
     font-size: 22px;
     font-weight: 700;
-    margin-bottom: 10px !important;
-    margin-top: 40px !important;
   }
 
   .free {
@@ -1066,6 +1064,15 @@ body.no-scroll {
   }
   .free .blog-item__img {
     width: 100%;
+  }
+  .free-top {
+    margin-bottom: 24px;
+  }
+  .free-top__title {
+    font-size: 22px;
+  }
+  .free-top__link {
+    display: none;
   }
 
   .free.similar-slider .swiper-slide {
@@ -1465,6 +1472,10 @@ body.no-scroll {
     padding-top: 20px;
   }
 
+  .main-title {
+    margin: 40px 0 10px;
+  }
+
   .main-list {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
@@ -1494,9 +1505,6 @@ body.no-scroll {
   }
 }
 @media (max-width: 600px) {
-  .main-title {
-    margin-top: 72px;
-  }
   .main .tooltip-popap .popap {
     margin: 50px auto;
   }

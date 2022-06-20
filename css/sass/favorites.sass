@@ -1,8 +1,5 @@
 @import style.sass
 
-.favorites
-    padding-top: var(--pt)
-
 .main
     position: relative
     &-btns
@@ -27,6 +24,9 @@
         align-items: center
         margin-top: 70px
         margin-bottom: 83px
+        .main-title
+            margin-top: 0 !important
+            margin-bottom: 0 !important
         &__closeBtn
             @include _btn
             position: absolute
@@ -219,6 +219,7 @@
         flex-direction: row
         justify-content: space-between
         align-items: center
+        margin-top: 40px
         margin-bottom: 26px
     .main-title
         font-weight: 700
@@ -232,10 +233,8 @@
 @media (max-width: 600px)
     .main-btns
         display: flex
-    .main-top
-        margin-top: 72px
-        &__btns
-            display: none
+    .main-top__btns
+        display: none
 @media (max-width: 425px)
     .main-catalog
         grid-template-columns: 1fr
