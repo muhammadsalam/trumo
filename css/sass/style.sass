@@ -334,6 +334,8 @@ body
             @include fillColor($black, $red)
             label
                 cursor: pointer
+            svg
+                pointer-events: none
         input
             padding: 0
             width: 0px
@@ -580,6 +582,8 @@ body
         display: flex
         justify-content: space-between
         align-items: center
+        &.active .header-form__popap.active
+            display: block
         .logo
             padding-bottom: 0
         &-right
@@ -589,8 +593,9 @@ body
             margin: 0 15px 5px 0
             button
                 margin-right: 0 !important
-            &__popap.active
-                display: block
+            &__popap
+                top: calc(-1 * var(--pt))
+                padding-top: var(--pt)
             &.active
                 background: transparent
                 padding: 0
@@ -605,7 +610,7 @@ body
             align-items: flex-start
             justify-content: flex-start
             flex-direction: column
-            padding-top: var(--pt)
+            padding-top: calc(var(--pt) + 50px)
             top: 0
             left: 0
             background-color: $white
@@ -615,6 +620,8 @@ body
             line-height: 54px
         &.active
             position: fixed
+            padding-left: var(--cp)
+            padding-right: var(--cp)
             .header-inner
                 display: flex
             .header-right

@@ -1,7 +1,14 @@
+window.addEventListener('click', (e) => console.log(e.target));
+function ifer(selector, event, func){
+    if(document.querySelector(selector)) document.querySelector(selector).addEventListener(event, func);
+}
+
 function formToggle() {
     let form = document.querySelector(".header-form");
     form.classList.toggle("active");
-}
+    document.querySelector
+}ifer('.js-form-toggle', 'focus', formToggle);
+ifer('.js-form-toggle', 'blur', formToggle);
 
 function toUp() {
     window.scrollTo(0, 0);
@@ -11,22 +18,22 @@ function headerToggle() {
     const header = document.querySelector(".header");
     document.body.classList.toggle("no-scroll");
     header.classList.toggle("active");
-}
+}ifer('.js-header-toggle', 'click', headerToggle);
 
 function headerCatalogBtn() {
     const catalog = document.querySelector(".header-catalog");
     catalog.classList.toggle("active");
-}
+}ifer('.js-header-catalog-btn', 'click', headerCatalogBtn);
 
 function headerSearchButton() {
     const popap = document.querySelector(".header-form__popap");
     popap.classList.add("active");
-}
+}ifer('.js-header-search-button', 'click', headerSearchButton);
 
 function closeSearchButton() {
     const popap = document.querySelector(".header-form__popap");
     popap.classList.remove("active");
-}
+}ifer('.js-close-search-button', 'click', closeSearchButton);
 
 function closeTooltipButton() {
     const mainLists = document.querySelectorAll(".main-list__item");
