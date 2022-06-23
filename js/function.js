@@ -1,4 +1,3 @@
-window.addEventListener('click', (e) => console.log(e.target));
 function ifer(selector, event, func){
     if(document.querySelector(selector)) document.querySelector(selector).addEventListener(event, func);
 }
@@ -12,7 +11,7 @@ ifer('.js-form-toggle', 'blur', formToggle);
 
 function toUp() {
     window.scrollTo(0, 0);
-}
+}ifer('.js-to-up', 'click', toUp);
 
 function headerToggle() {
     const header = document.querySelector(".header");
