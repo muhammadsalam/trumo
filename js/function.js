@@ -81,3 +81,5 @@ function mainFooter () {
         });
     });
 }
+
+if(document.querySelector('.footer-content__item')) mainFooter();

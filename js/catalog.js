@@ -47,7 +47,6 @@ filterRange.noUiSlider.on("change", function (values, handle) {
 sectionToSlider(".free");
 
 mainCatalog();
-mainFooter();
 
 function toggleMaterials() {
     const modal = document.querySelector(".filter-modal.materials-modal");

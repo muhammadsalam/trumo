@@ -1,6 +1,5 @@
 sectionToSlider('.free.blog-slider');
 sectionToSlider('.free.similar-slider');
-mainFooter();
 
 let productSlider = new Swiper(".product-slider-1", {
     spaceBetween: window.outerWidth < 768 ? 10 : 20,
