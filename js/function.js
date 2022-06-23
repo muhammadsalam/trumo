@@ -51,21 +51,6 @@ function sectionToSlider(el) {
     }    
 }
 
-function toggleFilter() {
-    const mainFilter = document.querySelector(".main-filter");
-    mainFilter.classList.toggle("active");
-    document.body.classList.toggle('no-scroll')
-    
-    const materialsEL = document.querySelector('.filter-modal.materials-modal');
-    materialsEL.classList.remove('active');
-    materialsEL.previousElementSibling.classList.remove('active');
-}
-
-function loadmore() {
-    const btn = document.querySelector(".load-btn");
-    btn.classList.toggle("loading");
-}
-
 function mainCatalog () {
     const mainCatalog = document.querySelector(".main-catalog");
     mainCatalog.addEventListener("click", (e) => {

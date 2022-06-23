@@ -1319,6 +1319,7 @@ body.no-scroll {
   cursor: pointer;
 }
 .main-filter__btn span {
+  pointer-events: none;
   margin-right: 11px;
   position: relative;
 }
@@ -1451,6 +1452,7 @@ body.no-scroll {
   background-color: #EFEFEF;
 }
 .main-filter__item .filter-modal .materials-modal-back svg {
+  pointer-events: none;
   width: auto;
   position: static;
   -webkit-transform: none;

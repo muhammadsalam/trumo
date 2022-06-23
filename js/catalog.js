@@ -52,7 +52,7 @@ function toggleMaterials() {
     const modal = document.querySelector(".filter-modal.materials-modal");
     modal.classList.remove("active");
     modal.previousElementSibling.classList.remove("active");
-}
+}ifer('.js-toggle-materials', 'click', toggleMaterials);
 
 document
     .querySelector(".filter-modal.materials-modal")
@@ -85,24 +85,20 @@ function changingFilter (type) {
 }
 document.querySelector(".main-filter").addEventListener("change", (e) => changingFilter(e.target.type));
 
-// ------ фильтры в мобилке --------
+function toggleFilter() {
+    const mainFilter = document.querySelector(".main-filter");
+    mainFilter.classList.toggle("active");
+    document.body.classList.toggle('no-scroll')
+    
+    const materialsEL = document.querySelector('.filter-modal.materials-modal');
+    materialsEL.classList.remove('active');
+    materialsEL.previousElementSibling.classList.remove('active');
+}
 
-// let priceBoost = [];
-// const filterCheckbox = document.querySelector('.filter-modal.price');
+const toggleFilters = document.querySelectorAll('.js-toggle-filter');
+[].forEach.call(toggleFilters, el => el.addEventListener('click', toggleFilter))
 
-// filterCheckbox.addEventListener('change', (e) => {
-//     const value = e.target.value;
-
-//     if(!e.target.checked){
-//         priceBoost = priceBoost.slice(value, value)
-//         return;
-//     }
-
-//     priceBoost[value] = value;
-//     let parent = e.target;
-//     while (!parent.classList.contains('filter-modal')){
-//         parent = parent.parentNode;
-//         console.log(parent);
-//     }
-
-// })
+function loadmore() {
+    const btn = document.querySelector(".load-btn");
+    btn.classList.toggle("loading");
+}document.querySelector('.js-catalog-load').addEventListener('click', loadmore);
