@@ -61,6 +61,11 @@ function mainCatalog () {
     });    
 }
 
+function loadmore() {
+    const btn = document.querySelector(".load-btn");
+    btn.classList.toggle("loading");
+}ifer('.js-load-btn', 'click', loadmore);
+
 // ----- FOOTER -----
 
 function mainFooter () {

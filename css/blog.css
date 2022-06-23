@@ -1328,6 +1328,9 @@ body.no-scroll {
 .load-btn {
   margin-top: 96px;
 }
+.load-btn svg {
+  pointer-events: none;
+}
 
 @media (max-width: 1024px) {
   .blog-list {

@@ -97,8 +97,3 @@ function toggleFilter() {
 
 const toggleFilters = document.querySelectorAll('.js-toggle-filter');
 [].forEach.call(toggleFilters, el => el.addEventListener('click', toggleFilter))
-
-function loadmore() {
-    const btn = document.querySelector(".load-btn");
-    btn.classList.toggle("loading");
-}document.querySelector('.js-catalog-load').addEventListener('click', loadmore);
