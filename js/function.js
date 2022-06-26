@@ -24,6 +24,14 @@ function headerCatalogBtn() {
     catalog.classList.toggle("active");
 }ifer('.js-header-catalog-btn', 'click', headerCatalogBtn);
 
+document.addEventListener('click', e => {
+    const el = e.target;
+    if (!el.classList.contains('js-header-catalog-btn') && !el.classList.contains('header-catalog__list') && !el.closest('.js-header-catalog-btn') && !el.closest('.header-catalog__list')) {
+        const catalog = document.querySelector(".header-catalog");
+        catalog.classList.remove("active");
+    }
+});
+
 function headerSearchButton() {
     const popap = document.querySelector(".header-form__popap");
     popap.classList.add("active");
