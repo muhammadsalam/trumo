@@ -1,0 +1,78 @@
+$white: #ffffff
+$lightgray: #C4C4C4
+$lightgray-2: #D4D4D4
+$lightgray-3: #F5F5F5
+$lightgray-4: #818181
+$lightgray-5: #787878
+$red: #E83445
+$darkred: #D41C2E
+$_darkred: #cf3242
+$black: #000000
+$dark: #525252
+
+@mixin h_underline($r, $url)
+    text-decoration: none
+    display: inline-block
+    color: $black
+    position: relative
+    &:after
+        content: $url
+        display: inline-block
+        position: absolute
+        right: $r
+        top: 50%
+        transform: translateY(-50%)
+        line-height: 0
+        transition: right .123s ease-out
+
+@mixin hh_underline($r, $color: $black)
+    text-decoration: underline
+    text-decoration-skip-ink: none
+    text-decoration-color: $color
+    &:after
+        right: $r - 5px
+
+@mixin _btn
+    padding: 0
+    margin: 0
+    border: 0
+    background: 0
+    cursor: pointer
+
+@mixin _link
+    color: inherit
+    text-decoration: none
+
+@mixin newNotification
+    position: relative
+    .data-new
+        position: absolute
+        top: -9px
+        right: -14px
+        background-color: $red
+        padding: 1px 5px
+        line-height: 15px
+        font-size: 11px
+        font-weight: 700
+        color: #fff
+        display: inline-block
+        border: 1px solid $white
+        border-radius: 50px
+
+@mixin fillColor ($prev, $curr)
+    path
+        transition: fill .123s ease-out
+        fill: $prev
+    &:hover path
+        fill: $curr
+
+@mixin h_redborder($p)
+    padding-bottom: $p
+    transition: all 0.123s ease-out
+    outline: none
+    background-image: linear-gradient(90deg, #E83445 0%, #E83445 100%)
+    background-position: left bottom
+    background-size: 0px 1px
+    background-repeat: no-repeat
+    &:hover, &:focus
+        background-size: 100% 1px
